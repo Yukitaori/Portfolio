@@ -1,0 +1,28 @@
+:root {
+  --first-color: #95d5b2;
+  --second-color: #081c15;
+  --first-font: "Righteous", cursive;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  color: var(--first-color);
+  background-color: var(--second-color);
+  font-family: var(--first-font);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.separation {
+  border-top: solid 1px var(--first-color);
+  width: 50%;
+  margin: 3em auto;
+}
+
