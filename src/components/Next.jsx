@@ -2,7 +2,7 @@ import React from 'react'
 
 function Next() {
   return (
-    <div>Next</div>
+    <div id='next'>Next</div>
   )
 }
 

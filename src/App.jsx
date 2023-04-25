@@ -15,12 +15,12 @@ import Separation from './components/Separation'
 
 function App() {
 
-  const parts = ["About", "Experience", "Projects", "Next", "Contact"]
+  const parts = ["About me", "Experience", "Projects", "What's Next", "Contact"]
 
   return (
     <div className="App">
       <Navbar />
-      <Menu />
+      <Menu parts={parts}/>
       <Introduction />
       <Separation />
       <About />
