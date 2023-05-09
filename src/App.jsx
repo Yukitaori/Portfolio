@@ -14,13 +14,13 @@ import Social from "./components/Social"
 import Separation from './components/Separation'
 
 function App() {
-
+  const [showMenu, setShowMenu] = useState(false)
   const parts = ["About me", "Experience", "Projects", "What's Next", "Contact"]
 
   return (
     <div className="App">
-      <Navbar />
-      <Menu parts={parts}/>
+      <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
+      {showMenu ? <Menu parts={parts}/> : null}     
       <Introduction />
       <Separation />
       <About />

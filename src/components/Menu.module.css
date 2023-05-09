@@ -1,0 +1,18 @@
+.menu {
+  border: 5px solid var(--first-color);
+  border-top: none;
+  transition: 0.5s ease-in;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: auto;
+  font-size: calc(1em + 3vw);
+}
+
+.navLinks a:visited {
+  color: var(--first-color);
+}
