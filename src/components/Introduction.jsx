@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from './Introduction.module.css';
 
 function Introduction() {
   return (
-    <div>
+    <div id='introduction'>
       <h1>Hi, I'm François</h1>
       <div>
         <p>I write code, and it turns into stuff since 2023.</p>

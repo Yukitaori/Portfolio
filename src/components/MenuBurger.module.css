@@ -2,7 +2,9 @@
   border: 5px solid var(--first-color);
   background-color: var(--second-color);
   color: var(--first-color);
-  height: 15vw;
-  width: 15vw;
+  height: 10vw;
+  width: 10vw;
+  max-height: 200px;
+  max-width: 200px;
   font-family: var(--first-font);
 }
