@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React, { useState } from 'react'
 import MenuBurger from './MenuBurger'
 import Menu from './Menu'
 import Logo from './Logo'
@@ -9,7 +9,7 @@ function Navbar({parts}) {
     <nav>
       <Logo />
       <MenuBurger showMenu={showMenu} setShowMenu={setShowMenu} />
-      {showMenu ? <Menu parts={parts}/> : null}
+      {showMenu ? <Menu parts={parts} setShowMenu={setShowMenu}/> : null}
     </nav>
   )
 }

@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styles from './App.css'
 import Navbar from "./components/Navbar"
 import Introduction from "./components/Introduction"
 import About from "./components/About"
@@ -18,19 +15,24 @@ function App() {
   const parts = ["About me", "Experience", "Projects", "What's Next", "Contact"]
 
   return (
-    <div className="App">
+    <div className="styles.app">
       <Navbar parts={parts}/>
       <div id='portfolio'>
         <Introduction />
         <Separation />
+        <span id='aboutme'></span>
         <About />
         <Separation />
+        <span id='experience'></span>
         <Experience />
         <Separation />
+        <span id='projects'></span>
         <Projects />
         <Separation />
+        <span id='whatsnext'></span>
         <Next />
         <Separation />
+        <span id='contact'></span>
         <Contact />
         <Separation />
         <Social />

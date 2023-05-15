@@ -1,8 +1,10 @@
 .menu {
+  z-index: 3;
   padding-top: 1em;
-  height: 30vh;
+  height: 35vh;
   width: 100%;
   top: 15vw;
+  display: block;
   position: fixed;
   border: 5px solid var(--first-color);
   background-color: var(--second-color);
@@ -16,6 +18,10 @@
   align-items: center;
   margin: 0px auto 1em auto;
   font-size: calc(2.5vh);
+}
+
+.navLinks:last-of-type {
+  margin-bottom: 1em;
 }
 
 .navLinks a:visited {

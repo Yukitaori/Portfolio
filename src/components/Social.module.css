@@ -1,0 +1,5 @@
+.socialIcons {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}

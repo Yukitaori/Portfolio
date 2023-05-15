@@ -1,4 +1,5 @@
 .menuBurger {
+  margin-right: 1em;
   border: 5px solid var(--first-color);
   background-color: var(--second-color);
   color: var(--first-color);
