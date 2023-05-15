@@ -2,7 +2,6 @@ import styles from './App.css'
 import Navbar from "./components/Navbar"
 import Introduction from "./components/Introduction"
 import About from "./components/About"
-import Menu from "./components/Menu"
 import Experience from "./components/Experiences"
 import Projects from "./components/Projects"
 import Next from "./components/Next"
@@ -15,7 +14,7 @@ function App() {
   const parts = ["About me", "Experience", "Projects", "What's Next", "Contact"]
 
   return (
-    <div className="styles.app">
+    <div className={styles.app}>
       <Navbar parts={parts}/>
       <div id='portfolio'>
         <Introduction />
