@@ -1,0 +1,26 @@
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectTitle {
+  min-width: fit-content;
+  margin-right: .5em;
+}
+
+.projectStacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: .5em;
+}
+
+.projectStacks p {
+  margin: .5em;
+}
+
+.projectsLinks {
+  display: flex;
+  align-items: center;
+}

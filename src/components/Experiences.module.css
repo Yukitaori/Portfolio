@@ -1,0 +1,21 @@
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experienceTitle {
+  min-width: fit-content;
+  margin-right: .5em;
+}
+
+.experienceStacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: .5em;
+}
+
+.experienceStacks p {
+  margin: .5em;
+}
