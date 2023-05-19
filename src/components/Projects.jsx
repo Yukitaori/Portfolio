@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from './Projects.module.css'
 import githubIcon from "../assets/icons/github_nr_64px.png"
+import htmlicon from "../assets/icons/html-5.png"
+import cssicon from "../assets/icons/css-3.png"
+import jsicon from "../assets/icons/js.png"
+import reacticon from "../assets/icons/react.png"
 
 function Projects() {
   return (
@@ -14,10 +18,10 @@ function Projects() {
             <h3>Apr 2023 - May 2023</h3>
           </div>
           <div className={styles.projectStacks}>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
+            <img className={styles.iconImg} src={htmlicon} alt="HTML icon" />
+            <img className={styles.iconImg} src={cssicon} alt="CSS icon" />
+            <img className={styles.iconImg} src={jsicon} alt="JavaScript icon" />
+            <img className={styles.iconImg} src={reacticon} alt="React icon" />
           </div>
         </div>
         <div className={styles.projectText}>
@@ -43,9 +47,9 @@ function Projects() {
             <h3>Mar 2023 - Apr 2023</h3>
           </div>
           <div className={styles.projectStacks}>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
+            <img className={styles.iconImg} src={htmlicon} alt="HTML icon" />
+            <img className={styles.iconImg} src={cssicon} alt="CSS icon" />
+            <img className={styles.iconImg} src={jsicon} alt="JavaScript icon" />
           </div>
         </div>
         <div className={styles.projectText}>
@@ -71,9 +75,9 @@ function Projects() {
             <h3>Jan 2023 - Apr 2023</h3>
           </div>
           <div className={styles.projectStacks}>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
+            <img className={styles.iconImg} src={htmlicon} alt="HTML icon" />
+            <img className={styles.iconImg} src={cssicon} alt="CSS icon" />
+            <img className={styles.iconImg} src={jsicon} alt="JavaScript icon" />
           </div>
         </div>
         <div className={styles.projectText}>

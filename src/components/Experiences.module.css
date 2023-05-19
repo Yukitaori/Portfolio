@@ -1,6 +1,6 @@
 .experienceHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -19,3 +19,8 @@
 .experienceStacks p {
   margin: .5em;
 }
+
+.iconImg {
+  width: 5vw;
+  height: auto;
+  }

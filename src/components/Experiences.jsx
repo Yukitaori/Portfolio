@@ -1,5 +1,10 @@
 import React from 'react'
 import styles from './Experiences.module.css';
+import htmlicon from "../assets/icons/html-5.png"
+import cssicon from "../assets/icons/css-3.png"
+import jsicon from "../assets/icons/js.png"
+import reacticon from "../assets/icons/react.png"
+import mysqlicon from "../assets/icons/mysql.png"
 
 function Experience() {
   return (
@@ -12,11 +17,11 @@ function Experience() {
             <h3>Feb 2023 - Jul 2023</h3>
           </div>
           <div className={styles.experienceStacks}>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>REACT</p>
-            <p>MySQL</p>
+            <img className={styles.iconImg} src={htmlicon} alt="HTML icon" />
+            <img className={styles.iconImg} src={cssicon} alt="CSS icon" />
+            <img className={styles.iconImg} src={jsicon} alt="JavaScript icon" />
+            <img className={styles.iconImg} src={reacticon} alt="React icon" />
+            <img className={styles.iconImg} src={mysqlicon} alt="MySQL icon" />
           </div>
         </div>
         <p>Wild Code School has taught me the basics of HTML and CSS, but also JavaScript and React.</p>
