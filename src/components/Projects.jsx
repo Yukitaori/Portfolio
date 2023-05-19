@@ -5,6 +5,9 @@ import htmlicon from "../assets/icons/html-5.png"
 import cssicon from "../assets/icons/css-3.png"
 import jsicon from "../assets/icons/js.png"
 import reacticon from "../assets/icons/react.png"
+import wildkedin from "../assets/images/wildkedin-1.png"
+import pickinimpact from "../assets/images/pickinimpact-1.png"
+import mastermind from "../assets/images/mastermind-1.png"
 
 function Projects() {
   return (
@@ -29,10 +32,10 @@ function Projects() {
           <p>We had two constraints for this project : working with React and working with APIs.</p>
           <p>We were three persons on this project and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.</p>
           </div>
-        <img src="" alt="Pickin Impact Screenshot" />
+        <img src={pickinimpact} alt="Pickin Impact Screenshot" />
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} href="">
-            <p>See more</p>
+            <button className={styles.seeMore} type='button'>See more</button>
           </a>
           <a className={styles.githubLink} href="">
             <img src={githubIcon} alt="Github Icon" />
@@ -57,10 +60,10 @@ function Projects() {
           <p>Four of us worked on this project for two weeks, that takes the form of a portfolio presenting the persons from the class, with a filters system.</p>
           <p>Versioning with Git and Github were a bit of an intellectual challenge at first, but we survived it.</p>
           </div>
-        <img src="" alt="Wildked'in Screenshot" />
+        <img src={wildkedin} alt="Wildked'in Screenshot" />
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} href="">
-            <p>See more</p>
+            <button className={styles.seeMore} type='button'>See more</button>
           </a>
           <a className={styles.githubLink} href="">
             <img src={githubIcon} alt="Github Icon" />
@@ -85,10 +88,10 @@ function Projects() {
           <p>I started this project (my very first personal one) before my formation to test JavaScript and DOM manipulation.</p>
           <p>I had quite a hard time with the algorithm in charge of verifying the user's guess but I eventually made it.</p>
           </div>
-        <img src="" alt="Mastermind Screenshot" />
+        <img src={mastermind} alt="Mastermind Screenshot" />
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} href="">
-            <p>See more</p>
+            <button className={styles.seeMore} type='button'>See more</button>
           </a>
           <a className={styles.githubLink} href="">
             <img src={githubIcon} alt="Github Icon" />

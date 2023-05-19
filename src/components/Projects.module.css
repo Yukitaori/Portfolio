@@ -26,10 +26,19 @@
 
 .projectsLinks {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 15vw;
 }
 
 .iconImg {
   width: 5vw;
+  margin-right: 1em;
   height: auto;
   }
+
+.seeMore {
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+}
