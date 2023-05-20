@@ -2,10 +2,14 @@
   margin-top: 5em;
 }
 
+.project:not(:last-child) {
+  border-bottom: 5px dotted var(--first-color);}
+
 .projectHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  margin-bottom: 5vh;
 }
 
 .projectTitle {
@@ -17,14 +21,70 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: .5em;
+  margin-right: 1em;
+  margin-left: 5em;
 }
 
-.projectStacks p {
-  margin: .5em;
+.stackImg {
+  width: 5vw;
+  margin-right: 1em;
+  height: auto;
+  }
+
+.projectBody {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  justify-content: center;
+  align-items: center;
+}
+
+.projectText {
+  grid-column: 1 / 5;
+}
+
+.projectPic {
+  border-radius: 10px;
+  grid-column: 5 / 6;
+  width: 15vw;
+  margin-right: 5vw;
+}
+
+.projectPic:hover {
+  box-shadow: inset 5px var(--second-color);
+  border-radius: 10px;
+  grid-column: 5 / 6;
+  width: 15vw;
+  margin-right: 5vw;
+}
+
+.projectPicLarge{
+  border-radius: 20px;
+  position: absolute;
+  height: 60vh;
+  justify-self: center;
+  align-items: center;
+}
+
+.seeMore {
+  transition: .5s;
+  border: 5px solid var(--first-color);
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+.seeMore:hover {
+  transition: .1s linear;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
 }
 
 .projectsLinks {
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +92,5 @@
 }
 
 .iconImg {
-  width: 5vw;
-  margin-right: 1em;
-  height: auto;
-  }
-
-.seeMore {
-  width: 15rem;
-  height: 5rem;
-  font-size: 2rem;
+  width: 10vw;
 }
