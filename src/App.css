@@ -35,7 +35,7 @@ nav {
 }
 
 .separation {
-  border-top: solid 1px var(--first-color);
+  border-top: solid .5em var(--first-color);
   width: 50%;
   margin: 5rem auto;
 }
@@ -50,21 +50,21 @@ h1 {
 h2 {
   font-size: calc(.7em + 2vw);
   margin-top: 1rem;
-  margin-left: 17.5vw;
+  margin-left: 15vw;
   text-decoration:underline ;
 }
 
 h3 {
   margin-top: .2em;;
   font-size: calc(.5em + 1vw);
-  margin-left: 17.5vw;
+  margin-left: 15vw;
 }
 
 p {
   font-size: calc(1em + 1vw);
   max-width: 25ch;
   margin-top: 2rem;
-  margin-left: 25vw;
+  margin-left: 20vw;
   margin-right: 10vw;
 }
 

@@ -16,11 +16,22 @@ input {
 }
 
 button {
-  width: 10%;
-  padding: .2em;
+  transition: .1s;
+  width: fit-content;
+  padding: .5em;
   margin: 1em;
   border: 2px solid var(--first-color);
   border-radius: 10px;
   background-color: var(--second-color);
   color: var(--first-color)
+}
+
+button:hover {
+  transition: .1s;
+  width: fit-content;
+  padding: .5em;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: var(--first-color);
+  color: var(--second-color)
 }

@@ -10,9 +10,15 @@ function Social() {
     <div>
       <h1>Social</h1>
       <div className={styles.socialIcons}>
-        <img className={styles.socialIcon} src={github} alt="github icon" />
-        <img className={styles.socialIcon} src={linkedin} alt="linkedin icon" />
-        <img className={styles.socialIcon} src={mail} alt="mail icon" />
+        <a href="https://github.com/Yukitaori">
+          <img className={styles.socialIcon} src={github} alt="github icon" />
+        </a>
+        <a href="https://linkedin.com/in/francoischavallard">
+          <img className={styles.socialIcon} src={linkedin} alt="linkedin icon" />
+        </a>
+        <a href="mailto:francois.chavallard@gmail.com">
+          <img className={styles.socialIcon} src={mail} alt="mail icon" />
+        </a>
       </div>
     </div>
   )

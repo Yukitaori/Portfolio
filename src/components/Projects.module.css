@@ -1,13 +1,15 @@
 .project {
-  margin-top: 5em;
+  padding-top: 5em;
 }
 
 .project:not(:last-child) {
-  border-bottom: 5px dotted var(--first-color);}
+  border-bottom: 5px dotted var(--first-color);
+  padding-bottom: 5em;
+}
 
 .projectHeader {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 5vh;
 }
@@ -21,13 +23,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 1em;
-  margin-left: 5em;
+  margin-right: 2vw;
+  margin-left: 1em;
 }
 
 .stackImg {
   width: 5vw;
-  margin-right: 1em;
+  margin-right: .5em;
   height: auto;
   }
 
@@ -50,14 +52,6 @@
   margin-right: 5vw;
 }
 
-.projectPic:hover {
-  box-shadow: inset 5px var(--second-color);
-  border-radius: 10px;
-  grid-column: 5 / 6;
-  width: 15vw;
-  margin-right: 5vw;
-}
-
 .projectPicLarge{
   border-radius: 20px;
   position: absolute;
@@ -67,20 +61,22 @@
 }
 
 .seeMore {
-  transition: .5s;
+  transition: .1s;
+  padding: .5em;
   border: 5px solid var(--first-color);
-  width: 15rem;
-  height: 5rem;
-  font-size: 2rem;
+  width: 15vw;
+  height: fit-content;
+  font-size: 1rem;
 }
 
 .seeMore:hover {
-  transition: .1s linear;
+  transition: .1s;
+  padding: .5em;
   background-color: var(--first-color);
   color: var(--second-color);
-  width: 15rem;
-  height: 5rem;
-  font-size: 2rem;
+  width: 15vw;
+  height: fit-content;
+  font-size: 1rem;
 }
 
 .projectsLinks {

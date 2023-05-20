@@ -1,11 +1,45 @@
+.menuBurgerDiv {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
 .menuBurger {
   margin-right: 1em;
-  border: 5px solid var(--first-color);
   background-color: var(--second-color);
   color: var(--first-color);
-  height: 10vw;
+  height: fit-content;
   width: 10vw;
   max-height: 200px;
   max-width: 200px;
   font-family: var(--first-font);
+}
+
+.menuBurger div {
+  width: 10vw;
+  height: .5em;
+  border-radius: 5px;
+  background-color: var(--first-color);
+  margin-top: 2vw;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menuBurger .topBun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .menuBurger .bottomBun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .menuBurger .meat {
+  transform: rotate(45deg);
+  margin-top: -0.5em;
 }
