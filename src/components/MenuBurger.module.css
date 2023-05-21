@@ -8,7 +8,10 @@
 }
 
 .menuBurger {
-  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--second-color);
   color: var(--first-color);
   height: fit-content;
@@ -19,7 +22,8 @@
 }
 
 .menuBurger div {
-  width: 10vw;
+  width: 7vw;
+  min-width: 3em;
   height: .5em;
   border-radius: 5px;
   background-color: var(--first-color);

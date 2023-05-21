@@ -20,20 +20,6 @@ body {
   font-family: var(--first-font);
 }
 
-nav {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  padding: 1em 0px 1em 0px;
-  border-bottom: 5px solid var(--first-color);
-  background-color: var(--second-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 15vw;
-}
-
 .separation {
   border-top: solid .5em var(--first-color);
   width: 50%;

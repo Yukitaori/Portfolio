@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from "./Logo.module.css";
+import logo from "../assets/icons/celtic.png"
 
 export default function Logo() {
   return (
-    <h2 className={styles.logo}>Logo</h2>
+    <img className={styles.logo} src={logo} alt="Logo triskel" />
   )
 }
