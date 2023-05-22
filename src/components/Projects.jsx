@@ -36,10 +36,10 @@ function Projects() {
           <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} src={pickinimpact} alt="Pickin Impact Screenshot" />
         </div>
         <div className={styles.projectsLinks}>
-          <a className={styles.projectLink} href="">
+          <a className={styles.projectLink} target="blank" href="">
             <button className={styles.seeMore} type='button'>See more</button>
           </a>
-          <a className={styles.githubLink} href="https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P2-TradinImpact">
+          <a className={styles.githubLink} target="blank" href="https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P2-TradinImpact">
             <img className={styles.iconImg} src={githubIcon} alt="Github Icon" />
           </a>
         </div>
@@ -66,10 +66,10 @@ function Projects() {
           <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} src={wildkedin} alt="Wildked'in Screenshot"  />
         </div>
         <div className={styles.projectsLinks}>
-          <a className={styles.projectLink} href="https://wildcodeschool.github.io/2023-02-JS-FT-Lyon-P1-WeWildin/">
+          <a className={styles.projectLink} target="blank" href="https://wildcodeschool.github.io/2023-02-JS-FT-Lyon-P1-WeWildin/">
             <button className={styles.seeMore} type='button'>See more</button>
           </a>
-          <a className={styles.githubLink} href="https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WeWildin">
+          <a className={styles.githubLink} target="blank" href="https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P1-WeWildin">
             <img className={styles.iconImg} src={githubIcon} alt="Github Icon" />
           </a>
         </div>
@@ -96,10 +96,10 @@ function Projects() {
           <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} alt="Mastermind Screenshot" src={mastermind} />
         </div>
         <div className={styles.projectsLinks}>
-          <a className={styles.projectLink} href="https://yukitaori.github.io/Mastermind/">
+          <a className={styles.projectLink} target="blank" href="https://yukitaori.github.io/Mastermind/">
             <button className={styles.seeMore} type='button'>See more</button>
           </a>
-          <a className={styles.githubLink} href="https://github.com/Yukitaori/Mastermind">
+          <a className={styles.githubLink} target="blank" href="https://github.com/Yukitaori/Mastermind">
             <img className={styles.iconImg} src={githubIcon} alt="Github Icon" />
           </a>
         </div>
