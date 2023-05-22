@@ -4,7 +4,8 @@
   height: 30vh;
   width: 100%;
   top: 15vw;
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   border: 5px solid var(--first-color);
   background-color: var(--second-color);
@@ -12,8 +13,19 @@
   transition: 0.5s ease-in;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  animation: menu .2s 1 linear;
 }
+
+@keyframes menu {
+  0% {
+    translate: 0vh -100%;
+  }
+  100% {
+    translate: 0vh 0vw;
+  }
+};
 
 .navLinks {
   display: flex;

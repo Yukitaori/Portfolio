@@ -6,7 +6,7 @@ form {
   align-items: center;
 }
 
-input {
+input, textarea {
   margin: 1em;
   width: 50%;
   border-radius: 10px;

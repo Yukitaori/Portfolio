@@ -61,6 +61,7 @@
 }
 
 .seeMore {
+  min-width: fit-content;
   transition: .1s;
   padding: .5em;
   border: 5px solid var(--first-color);
@@ -70,6 +71,7 @@
 }
 
 .seeMore:hover {
+  min-width: fit-content;
   transition: .1s;
   padding: .5em;
   background-color: var(--first-color);
@@ -88,5 +90,5 @@
 }
 
 .iconImg {
-  width: 10vw;
+  width: 8vw;
 }
