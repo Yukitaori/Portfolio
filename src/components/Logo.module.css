@@ -1,10 +1,10 @@
 .logo {
   width: 8vw;
-  animation: like 3s infinite linear;
+  animation: logo 3s infinite linear;
   margin-left: 2vw;
 }
 
-@keyframes like {
+@keyframes logo {
   0% {
     transform: rotate( 0deg );
   }

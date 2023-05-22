@@ -12,7 +12,7 @@ export default function MenuBurger({showMenu, setShowMenu}) {
   return (
     <div className={styles.menuBurgerDiv}>
       {checkbox}
-      <label for={styles.toggle} id="menuBurger" className={styles.menuBurger} onClick={handleClick}>
+      <label htmlFor={styles.toggle} id="menuBurger" className={styles.menuBurger} onClick={handleClick}>
         <div className={styles.topBun}></div>
         <div className={styles.meat}></div>
         <div className={styles.bottomBun}></div>
