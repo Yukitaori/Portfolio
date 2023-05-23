@@ -5,8 +5,12 @@ import htmlicon from "../assets/icons/html-5.png"
 import cssicon from "../assets/icons/css-3.png"
 import jsicon from "../assets/icons/js.png"
 import reacticon from "../assets/icons/react.png"
-import wildkedin from "../assets/images/wildkedin-1.png"
-import pickinimpact from "../assets/images/pickinimpact-1.png"
+import wildkedin1 from "../assets/images/wildkedin-1.png"
+import wildkedin2 from "../assets/images/wildkedin-2.png"
+import wildkedin3 from "../assets/images/wildkedin-3.png"
+import pickinimpact1 from "../assets/images/tradinimpact-1.png"
+import pickinimpact2 from "../assets/images/tradinimpact-2.png"
+import pickinimpact3 from "../assets/images/tradinimpact-3.png"
 import mastermind from "../assets/images/mastermind-1.png"
 
 function Projects() {
@@ -33,7 +37,11 @@ function Projects() {
             <p>We had two constraints for this project : working with React and working with APIs.</p>
             <p>We were three persons on this project and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.</p>
           </div>
-          <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} src={pickinimpact} alt="Pickin Impact Screenshot" />
+          <div className={styles.projectGallery}>
+            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} src={pickinimpact1} alt="Pickin Impact Screenshot" />
+            <img className={styles.projectPic2} onClick={(e) => e.target.className === styles.projectPic2 ? e.target.className = styles.projectPicLarge2 : e.target.className = styles.projectPic2} src={pickinimpact2} alt="Pickin Impact Screenshot" />
+            <img className={styles.projectPic3} onClick={(e) => e.target.className === styles.projectPic3 ? e.target.className = styles.projectPicLarge3 : e.target.className = styles.projectPic3} src={pickinimpact3} alt="Pickin Impact Screenshot" />
+          </div>
         </div>
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} target="blank" href="">
@@ -63,7 +71,11 @@ function Projects() {
             <p>Four of us worked on this project for two weeks, that takes the form of a portfolio presenting the persons from the class, with a filters system.</p>
             <p>Versioning with Git and Github were a bit of an intellectual challenge at first, but we survived it.</p>
           </div>
-          <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} src={wildkedin} alt="Wildked'in Screenshot"  />
+          <div className={styles.projectGallery}>
+            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} src={wildkedin1} alt="Wildked'in Screenshot"  />
+            <img className={styles.projectPic2} onClick={(e) => e.target.className === styles.projectPic2 ? e.target.className = styles.projectPicLarge2 : e.target.className = styles.projectPic2} src={wildkedin2} alt="Wildked'in Screenshot"  />
+            <img className={styles.projectPic3} onClick={(e) => e.target.className === styles.projectPic3 ? e.target.className = styles.projectPicLarge3 : e.target.className = styles.projectPic3} src={wildkedin3} alt="Wildked'in Screenshot"  />
+          </div>
         </div>
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} target="blank" href="https://wildcodeschool.github.io/2023-02-JS-FT-Lyon-P1-WeWildin/">
@@ -93,7 +105,9 @@ function Projects() {
             <p>I started this project (my very first personal one) before my formation to test JavaScript and DOM manipulation.</p>
             <p>I had quite a hard time with the algorithm in charge of verifying the user's guess but I eventually made it.</p>
           </div>
-          <img className={styles.projectPic} onClick={(e) => e.target.className === styles.projectPic ? e.target.className = styles.projectPicLarge : e.target.className = styles.projectPic} alt="Mastermind Screenshot" src={mastermind} />
+          <div className={styles.projectGallery}>
+            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} alt="Mastermind Screenshot" src={mastermind} />
+          </div>
         </div>
         <div className={styles.projectsLinks}>
           <a className={styles.projectLink} target="blank" href="https://yukitaori.github.io/Mastermind/">
