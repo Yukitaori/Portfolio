@@ -72,8 +72,8 @@ function Projects() {
         <div className={styles.projectBody}>
           <div className={styles.projectText}>
             <p>My first group project during the formation.</p>
-            <p>Four of us worked on this project for two weeks, that takes the form of a portfolio presenting the persons from the class, with a filters system.</p>
-            <p>Versioning with Git and Github were a bit of an intellectual challenge at first, but we survived it.</p>
+            <p>Four of us worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.</p>
+            <p>Versioning with Git and Github were a bit of an intellectual challenge at first because it was new to us, but we survived it.</p>
           </div>
           <div className={styles.projectGallery}>
             <img className={styles.activePic2} src={activePic2} alt="Wildked'in Screenshot" />

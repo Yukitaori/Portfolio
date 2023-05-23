@@ -5,7 +5,7 @@ import photo from "../assets/images/photo.png"
 function About() {
   return (
     <div>
-      <h1>About</h1>
+      <h1>About me</h1>
       <div className={styles.aboutBody}>
         <div className={styles.aboutText}>
           <p>I'm a guy from Villeurbanne, France.</p>

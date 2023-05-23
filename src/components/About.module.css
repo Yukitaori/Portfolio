@@ -9,7 +9,7 @@
   height: 20vw;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .aboutBody {
     flex-direction: column-reverse;
     align-items: center;
