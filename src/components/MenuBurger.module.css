@@ -16,8 +16,6 @@
   color: var(--first-color);
   height: fit-content;
   width: 10vw;
-  max-height: 200px;
-  max-width: 200px;
   font-family: var(--first-font);
 }
 

@@ -1,10 +1,11 @@
 .socialIcons {
   margin-top: 5vh;
-  padding: 1em;
+  padding: 1em 0 3em 0;
   display: flex;
   justify-content: space-around;
 }
 
 .socialIcon {
-  width: 10vw
+  width: 10vw;
+  max-width: 7vh;
 }
