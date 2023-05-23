@@ -38,72 +38,78 @@
   display: grid;
   grid-template-columns: repeat(5, 20%);
   justify-content: center;
-  align-items: center;
 }
 
 .projectText {
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
 }
 
 .projectGallery {
-  display: grid;
-  grid-column: 5 / 6;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(20, 2vh);
+  margin: 1em 0;
+  width: 30vw;
+  grid-column: 4 / 6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vh;
+  justify-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  .projectBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectGallery {
+    margin: 2em 0;
+    width: 80vw;
+  }
+}
+
+.activePic1 {
+  border-radius: 20px;
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+}
+
+.activePic2 {
+  border-radius: 20px;
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+}
+
+.activePic3 {
+  border-radius: 20px;
+  width: 80%;
+  justify-self: center;
+  align-items: center;
 }
 
 .projectPic1 {
-  position: relative;
-  z-index: 3;
-  grid-column-start: 1;
-  grid-row-start: 1;
+  width: 20%;
   border-radius: 10px;
-  width: 15vw;
-  margin-right: 5vw;
 }
 
 .projectPic2 {
-  position: relative;
-  z-index: 2;
-  grid-column-start: 2;
-  grid-row-start: 2;
+  width: 20%;
   border-radius: 10px;
-  width: 15vw;
-  margin-right: 5vw;
 }
 
 .projectPic3 {
-  position: relative;
-  z-index: 1;
-  grid-column-start: 3;
-  grid-row-start: 3;
+  width: 20%;
   border-radius: 10px;
-  width: 15vw;
-  margin-right: 5vw;
 }
 
-.projectPicLarge1{
+.projectPicLarge{
   border-radius: 20px;
   position: absolute;
-  z-index: 6;
-  height: 60vh;
-  justify-self: center;
-  align-items: center;
-}
-
-.projectPicLarge2{
-  border-radius: 20px;
-  position: absolute;
-  z-index: 5;
-  height: 60vh;
-  justify-self: center;
-  align-items: center;
-}
-
-.projectPicLarge3{
-  border-radius: 20px;
-  position: absolute;
-  z-index: 4;
+  z-index: 7;
   height: 60vh;
   justify-self: center;
   align-items: center;

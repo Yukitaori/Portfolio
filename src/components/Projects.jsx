@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Projects.module.css'
 import githubIcon from "../assets/icons/github.png"
 import htmlicon from "../assets/icons/html-5.png"
@@ -8,16 +8,19 @@ import reacticon from "../assets/icons/react.png"
 import wildkedin1 from "../assets/images/wildkedin-1.png"
 import wildkedin2 from "../assets/images/wildkedin-2.png"
 import wildkedin3 from "../assets/images/wildkedin-3.png"
-import pickinimpact1 from "../assets/images/tradinimpact-1.png"
-import pickinimpact2 from "../assets/images/tradinimpact-2.png"
-import pickinimpact3 from "../assets/images/tradinimpact-3.png"
+import tradinimpact1 from "../assets/images/tradinimpact-1.png"
+import tradinimpact2 from "../assets/images/tradinimpact-2.png"
+import tradinimpact3 from "../assets/images/tradinimpact-3.png"
 import mastermind from "../assets/images/mastermind-1.png"
 
 function Projects() {
+  const [activePic1, setActivePic1] = useState(mastermind);
+  const [activePic2, setActivePic2] = useState(wildkedin1);
+  const [activePic3, setActivePic3] = useState(tradinimpact1);
+
   return (
     <div>
       <h1>Projects</h1>
-
       <div className={styles.project}>
         <div className={styles.projectHeader}>
           <div className={styles.projectTitle}>
@@ -38,9 +41,10 @@ function Projects() {
             <p>We were three persons on this project and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.</p>
           </div>
           <div className={styles.projectGallery}>
-            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} src={pickinimpact1} alt="Pickin Impact Screenshot" />
-            <img className={styles.projectPic2} onClick={(e) => e.target.className === styles.projectPic2 ? e.target.className = styles.projectPicLarge2 : e.target.className = styles.projectPic2} src={pickinimpact2} alt="Pickin Impact Screenshot" />
-            <img className={styles.projectPic3} onClick={(e) => e.target.className === styles.projectPic3 ? e.target.className = styles.projectPicLarge3 : e.target.className = styles.projectPic3} src={pickinimpact3} alt="Pickin Impact Screenshot" />
+            <img className={styles.activePic3} src={activePic3} alt="Pickin Impact Screenshot" />
+            <img className={styles.projectPic1} type='button' onClick={() => setActivePic3(tradinimpact1)} src={tradinimpact1} alt="Pickin Impact Screenshot" />
+            <img className={styles.projectPic2} type='button' onClick={() => setActivePic3(tradinimpact2)} src={tradinimpact2} alt="Pickin Impact Screenshot" />
+            <img className={styles.projectPic3} type='button' onClick={() => setActivePic3(tradinimpact3)} src={tradinimpact3} alt="Pickin Impact Screenshot" />
           </div>
         </div>
         <div className={styles.projectsLinks}>
@@ -72,9 +76,10 @@ function Projects() {
             <p>Versioning with Git and Github were a bit of an intellectual challenge at first, but we survived it.</p>
           </div>
           <div className={styles.projectGallery}>
-            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} src={wildkedin1} alt="Wildked'in Screenshot"  />
-            <img className={styles.projectPic2} onClick={(e) => e.target.className === styles.projectPic2 ? e.target.className = styles.projectPicLarge2 : e.target.className = styles.projectPic2} src={wildkedin2} alt="Wildked'in Screenshot"  />
-            <img className={styles.projectPic3} onClick={(e) => e.target.className === styles.projectPic3 ? e.target.className = styles.projectPicLarge3 : e.target.className = styles.projectPic3} src={wildkedin3} alt="Wildked'in Screenshot"  />
+            <img className={styles.activePic2} src={activePic2} alt="Wildked'in Screenshot" />
+            <img className={styles.projectPic1} type='button' onClick={() => setActivePic2(wildkedin1)} src={wildkedin1} alt="Wildked'in Screenshot"  />
+            <img className={styles.projectPic2} type='button' onClick={() => setActivePic2(wildkedin2)} src={wildkedin2} alt="Wildked'in Screenshot"  />
+            <img className={styles.projectPic3} type='button' onClick={() => setActivePic2(wildkedin3)} src={wildkedin3} alt="Wildked'in Screenshot"  />
           </div>
         </div>
         <div className={styles.projectsLinks}>
@@ -106,7 +111,8 @@ function Projects() {
             <p>I had quite a hard time with the algorithm in charge of verifying the user's guess but I eventually made it.</p>
           </div>
           <div className={styles.projectGallery}>
-            <img className={styles.projectPic1} onClick={(e) => e.target.className === styles.projectPic1 ? e.target.className = styles.projectPicLarge1 : e.target.className = styles.projectPic1} alt="Mastermind Screenshot" src={mastermind} />
+            <img className={styles.activePic1} src={activePic1} alt="Mastermind Screenshot" />
+            <img className={styles.projectPic1} type='button' onClick={() => setActivePic1(mastermind)} alt="Mastermind Screenshot" src={mastermind} />
           </div>
         </div>
         <div className={styles.projectsLinks}>

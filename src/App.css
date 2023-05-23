@@ -54,13 +54,20 @@ p {
   margin-right: 10vw;
 }
 
+@media screen and (max-width: 800px) {
+ p {
+  max-width: 25ch;
+  margin: 2rem auto;
+ }
+}
+
 #portfolio {
   position: relative;
   z-index: 1;
-  top: 15vw;
+  top: 15vh;
 }
 
 #aboutme, #experience, #projects, #whatsnext, #contact {
   position: relative;
-  top: -15vw;
+  top: -15vh;
 }
