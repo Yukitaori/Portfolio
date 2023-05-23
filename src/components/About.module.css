@@ -8,3 +8,14 @@
   border-radius: 100%;
   height: 20vw;
 }
+
+@media screen and (max-width: 650px) {
+  .aboutBody {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .profilePic {
+    margin-top: 1em;
+    height: 30vw;
+  }
+}

@@ -17,7 +17,7 @@ function Projects() {
       <div className={styles.project}>
         <div className={styles.projectHeader}>
           <div className={styles.projectTitle}>
-            <h2>Pickin Impact</h2>
+            <h2>Tradin Impact</h2>
             <h3>Apr 2023 - May 2023</h3>
           </div>
           <div className={styles.projectStacks}>
