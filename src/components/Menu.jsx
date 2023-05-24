@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Menu.module.css';
 
-function Menu({parts, setShowMenu}) {
+function Menu({parts, showMenu, setShowMenu}) {
 
   const mapMenu = (arr) => {
     return arr.map((element) => {
@@ -16,7 +16,7 @@ function Menu({parts, setShowMenu}) {
   }
   
   return (
-    <div className={styles.menuBar}>
+    <div className={showMenu ? styles.menuBar : styles.hiddenMenuBar}>
       <ul>
         {mapMenu(parts)}
       </ul>

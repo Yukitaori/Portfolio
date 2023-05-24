@@ -18,6 +18,10 @@
   animation: menu .2s 1 linear;
 }
 
+.hiddenMenuBar {
+  display : none;
+}
+
 @keyframes menu {
   0% {
     translate: 0vw -100%;

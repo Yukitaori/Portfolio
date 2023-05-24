@@ -13,7 +13,7 @@ function Navbar({parts}) {
         <h1 className={styles.title}>MY PORTFOLIO</h1>
         <MenuBurger showMenu={showMenu} setShowMenu={setShowMenu} />
       </div>
-      {showMenu ? <Menu parts={parts} setShowMenu={setShowMenu}/> : null}
+      <Menu parts={parts} showMenu={showMenu} setShowMenu={setShowMenu}/>
     </nav>
   )
 }
