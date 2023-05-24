@@ -48,7 +48,7 @@ function Projects() {
           </div>
         </div>
         <div className={styles.projectsLinks}>
-          <a className={styles.projectLink} target="blank" href="">
+          <a className={styles.projectLink} target="blank" href="https://tradin-impact.netlify.app/">
             <button className={styles.seeMore} type='button'>See more</button>
           </a>
           <a className={styles.githubLink} target="blank" href="https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P2-TradinImpact">
