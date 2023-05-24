@@ -33,9 +33,11 @@
   align-items: center;
   margin: 0px auto 1em auto;
   font-size: 2.5vh;
-  color: var(--first-color)
 }
 
+.navLinks:link {
+  color: var(--first-color)
+}
 
 .navLinks:last-of-type {
   margin-bottom: 1em;
