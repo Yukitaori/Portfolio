@@ -42,13 +42,10 @@ function Contact() {
 const handleSubmit = (e) => {
   e.preventDefault();
   setFormSubmit({name:name, mail:mail, message:message})
-  console.log(formSubmit)
 }
 
 useEffect(() => {
   const { error, value } = schema.validate(formSubmit);
-  console.log(error)
-  console.log(value)
   if (formSubmit && !error) {
     emailjs.send('service_hatoyzi', 'contact_form', templateParams)
     .then(function(response) {
