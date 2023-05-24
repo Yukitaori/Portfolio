@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Menu.module.css";
+import styles from './Menu.module.css';
 
 function Menu({parts, setShowMenu}) {
 
@@ -16,9 +16,11 @@ function Menu({parts, setShowMenu}) {
   }
   
   return(
-    <ul className={styles.menuBar}>
-      {mapMenu(parts)}
-    </ul>
+    <div className={styles.menuBar}>
+      <ul>
+        {mapMenu(parts)}
+      </ul>
+    </div>
   )
 }
 
