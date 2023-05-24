@@ -72,7 +72,7 @@ p {
   position: relative;
   top: -15vh;
 }
-
+/* 
 .menuBar {
   position: fixed;
   z-index: 3;
@@ -124,4 +124,4 @@ a:link {
 
 .navLinks a:visited {
   color: var(--first-color);
-}
+} */
