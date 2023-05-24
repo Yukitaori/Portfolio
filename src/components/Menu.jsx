@@ -16,7 +16,7 @@ function Menu({parts, setShowMenu}) {
   }
   
   return(
-    <ul className={styles.menuBar}>
+    <ul className="menuBar">
       {mapMenu(parts)}
     </ul>
   )
