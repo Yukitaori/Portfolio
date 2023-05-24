@@ -57,22 +57,7 @@
   justify-self: center;
 }
 
-
-.activePic1 {
-  border-radius: 20px;
-  width: 80%;
-  justify-self: center;
-  align-items: center;
-}
-
-.activePic2 {
-  border-radius: 20px;
-  width: 80%;
-  justify-self: center;
-  align-items: center;
-}
-
-.activePic3 {
+.activePic {
   border-radius: 20px;
   width: 80%;
   justify-self: center;
