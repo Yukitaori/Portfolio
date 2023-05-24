@@ -27,7 +27,7 @@
   }
 }; */
 
-.navLinks {
+/* .navLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,4 +45,4 @@
 
 .navLinks a:visited {
   color: var(--first-color);
-}
+} */
