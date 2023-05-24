@@ -67,18 +67,21 @@
 }
 
 .projectPic1 {
+  cursor: pointer;
   width: 20%;
   height: auto;
   border-radius: 10px;
 }
 
 .projectPic2 {
+  cursor: pointer;
   width: 20%;
   height: auto;
   border-radius: 10px;
 }
 
 .projectPic3 {
+  cursor: pointer;
   width: 20%;
   height: auto;
   border-radius: 10px;
@@ -93,6 +96,7 @@
 }
 
 .seeMore {
+  cursor: pointer;
   min-width: fit-content;
   transition: .1s;
   padding: .5em;
