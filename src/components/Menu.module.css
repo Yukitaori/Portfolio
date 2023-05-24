@@ -36,7 +36,7 @@
 }
 
 .navLinks:link {
-  color: var(--first-color)
+  color: var(--first-color);
 }
 
 .navLinks:last-of-type {
