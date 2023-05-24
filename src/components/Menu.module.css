@@ -15,10 +15,10 @@
   border-bottom-right-radius: 100%;
   justify-content: space-between;
   align-items: center;
-  animation: menubar .2s 1 linear;
+  animation: menu .2s 1 linear;
 }
 
-@keyframes menubar {
+@keyframes menu {
   0% {
     translate: 0vw -100%;
   }
