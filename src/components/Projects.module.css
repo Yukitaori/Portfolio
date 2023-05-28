@@ -102,7 +102,8 @@
   padding: .5em;
   border: 5px solid var(--first-color);
   width: 15vw;
-  height: fit-content;
+  min-height: fit-content;
+  height: 5vh;
   font-size: 1rem;
 }
 
@@ -113,7 +114,8 @@
   background-color: var(--first-color);
   color: var(--second-color);
   width: 15vw;
-  height: fit-content;
+  min-height: fit-content;
+  height: 5vh;
   font-size: 1rem;
 }
 
@@ -143,13 +145,16 @@
   }
 
   .seeMore {
-    height: 7vh;
-    width: 20vw;
+    font-size: 1em;
+    height: 10vh;
+    min-height: fit-content;
+    width: 25vw;
   }
   
   .seeMore:hover {
-    height: 7vh;
-    width: 20vw;
+    height: 10vh;
+    min-height: fit-content;
+    width: 25vw;
   }
 
   .iconImg {

@@ -30,7 +30,7 @@ function Projects() {
         <div className={styles.projectHeader}>
           <div className={styles.projectTitle}>
             <h2>Animalz</h2>
-            <h3>May 2023 - May 2023</h3>
+            <h3>May 2023</h3>
           </div>
           <div className={styles.projectStacks}>
             <img className={styles.stackImg} src={htmlicon} alt="HTML icon" />
@@ -76,9 +76,9 @@ function Projects() {
         </div>
         <div className={styles.projectBody}>
           <div className={styles.projectText}>
-            <p>Our second group projects is a video game that takes place in the Genshin Impact universe.</p>
+            <p>Our second group project is a video game that takes place in the Genshin Impact universe.</p>
             <p>We had two constraints for this project : working with React and working with APIs.</p>
-            <p>We were three persons on this project and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.</p>
+            <p>We were three persons on this one and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.</p>
           </div>
           <div className={styles.projectGallery}>
             <img className={styles.activePic} src={activePic3} alt="Tradin' Impact Screenshot" />
@@ -112,8 +112,8 @@ function Projects() {
         <div className={styles.projectBody}>
           <div className={styles.projectText}>
             <p>My first group project during the formation.</p>
-            <p>Four of us worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.</p>
-            <p>Versioning with Git and Github were a bit of an intellectual challenge at first because it was new to us, but we survived it.</p>
+            <p>Four of us have worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.</p>
+            <p>Versioning with Git and Github was a bit of an intellectual challenge at first because it was new to us, but we survived it.</p>
           </div>
           <div className={styles.projectGallery}>
             <img className={styles.activePic} src={activePic2} alt="Wildked'in Screenshot" />
