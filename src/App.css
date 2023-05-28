@@ -75,7 +75,7 @@ a:link {
 .separation {
   border-top: solid .5em var(--first-color);
   width: 50%;
-  margin: 10rem auto;
+  margin: 5rem auto;
   border-radius: 25px;
 }
 

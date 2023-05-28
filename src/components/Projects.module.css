@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin-right: 2vw;
   margin-left: 1em;
 }
@@ -30,6 +31,7 @@
 .stackImg {
   width: 6vw;
   margin-right: .5em;
+  margin-bottom: .5em;
   height: auto;
   }
 
@@ -98,7 +100,7 @@
 .seeMore {
   cursor: pointer;
   min-width: fit-content;
-  transition: .1s;
+  transition: .3s;
   padding: .5em;
   border: 5px solid var(--first-color);
   width: 15vw;
@@ -109,7 +111,7 @@
 
 .seeMore:hover {
   min-width: fit-content;
-  transition: .1s;
+  transition: .3s;
   padding: .5em;
   background-color: var(--first-color);
   color: var(--second-color);
@@ -120,7 +122,13 @@
 }
 
 .iconImg {
-  width: 8vw;
+  transition: .3s;
+  width: 6vw;
+}
+
+.iconImg:hover {
+  transition: .3s;
+  scale: 1.2;
 }
 
 @media screen and (max-width: 800px) {
@@ -146,15 +154,14 @@
 
   .seeMore {
     font-size: 1em;
-    height: 10vh;
-    min-height: fit-content;
-    width: 25vw;
+    height: fit-content;
+    width: 20vw;
   }
   
   .seeMore:hover {
-    height: 10vh;
-    min-height: fit-content;
-    width: 25vw;
+    font-size: 1em;
+    height: fit-content;
+    width: 20vw;
   }
 
   .iconImg {
