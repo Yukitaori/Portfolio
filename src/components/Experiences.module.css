@@ -1,3 +1,7 @@
+.experience {
+  padding-top: 5em;
+}
+
 .experienceHeader {
   display: flex;
   justify-content: space-between;
@@ -19,5 +23,6 @@
 .iconImg {
   width: 6vw;
   margin-right: .5em;
+  margin-bottom: .5em;
   height: auto;
 }
