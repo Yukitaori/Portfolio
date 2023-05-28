@@ -78,6 +78,6 @@ a:link {
 }
 
 #aboutme, #experience, #projects, #whatsnext, #contact {
-  position: relative;
+  position: inherit;
   top: -15vh;
 }
