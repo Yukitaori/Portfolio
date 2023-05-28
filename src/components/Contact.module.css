@@ -20,8 +20,10 @@ input, textarea {
 }
 
 button {
+  font-size: 1em;
   transition: .1s;
   width: fit-content;
+  height: fit-content;
   padding: .5em;
   margin: 1em;
   border: 2px solid var(--first-color);
@@ -31,8 +33,10 @@ button {
 }
 
 button:hover {
+  font-size: 1em;
   transition: .1s;
   width: fit-content;
+  height: fit-content;
   padding: .5em;
   margin: 1em;
   border-radius: 10px;

@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin-right: 2vw;
   margin-left: 1em;
 }
@@ -30,6 +31,7 @@
 .stackImg {
   width: 6vw;
   margin-right: .5em;
+  margin-bottom: .5em;
   height: auto;
   }
 
@@ -98,27 +100,35 @@
 .seeMore {
   cursor: pointer;
   min-width: fit-content;
-  transition: .1s;
+  transition: .3s;
   padding: .5em;
   border: 5px solid var(--first-color);
   width: 15vw;
-  height: fit-content;
+  min-height: fit-content;
+  height: 5vh;
   font-size: 1rem;
 }
 
 .seeMore:hover {
   min-width: fit-content;
-  transition: .1s;
+  transition: .3s;
   padding: .5em;
   background-color: var(--first-color);
   color: var(--second-color);
   width: 15vw;
-  height: fit-content;
+  min-height: fit-content;
+  height: 5vh;
   font-size: 1rem;
 }
 
 .iconImg {
-  width: 8vw;
+  transition: .3s;
+  width: 6vw;
+}
+
+.iconImg:hover {
+  transition: .3s;
+  scale: 1.2;
 }
 
 @media screen and (max-width: 800px) {
@@ -143,12 +153,14 @@
   }
 
   .seeMore {
-    height: 7vh;
+    font-size: 1em;
+    height: fit-content;
     width: 20vw;
   }
   
   .seeMore:hover {
-    height: 7vh;
+    font-size: 1em;
+    height: fit-content;
     width: 20vw;
   }
 
