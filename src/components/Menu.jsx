@@ -1,16 +1,18 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import styles from './Menu.module.css';
+
 
 function Menu({parts, showMenu, setShowMenu}) {
 
   const mapMenu = (arr) => {
     return arr.map((element) => {
       return (
-        <li key={element} className={styles.navLinks} onClick={() => setShowMenu(false)}>
-          <a href={`#${element.toLowerCase().replaceAll(" ", "").replaceAll("'", "")}`}>
-          {`${element}`}
-          </a>
-        </li>
+        <HashLink key={element} smooth to={`#${element.toLowerCase().replaceAll(" ", "").replaceAll("'", "")}`}>
+          <li className={styles.navLinks} onClick={() => setShowMenu(false)}>
+            {`${element}`}
+          </li>
+        </HashLink>
       )
     });
   }

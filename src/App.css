@@ -82,3 +82,7 @@ a:link {
   position: inherit;
   top: -15vh;
 }
+
+a:visited {
+  color: var(--first-color);
+}

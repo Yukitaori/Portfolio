@@ -37,6 +37,8 @@
   align-items: center;
   margin: 0px auto 1em auto;
   font-size: 2.5vh;
+  color: var(--first-color);
+
 }
 
 .navLinks:link {
@@ -45,8 +47,4 @@
 
 .navLinks:last-of-type {
   margin-bottom: 1em;
-}
-
-.navLinks a:visited {
-  color: var(--first-color);
 }
