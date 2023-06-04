@@ -1,0 +1,180 @@
+.project {
+  padding-top: 5em;
+}
+
+.project:not(:last-child) {
+  border-bottom: 5px dotted var(--first-color);
+  padding-bottom: 5em;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.projectTitle {
+  min-width: fit-content;
+  margin-right: .5em;
+}
+
+.projectStacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  margin-left: 1em;
+}
+
+.stackImg {
+  width: 6vw;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  height: auto;
+  }
+
+.projectBody {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  justify-content: center;
+}
+
+.projectText {
+  grid-column: 1 / 4;
+}
+
+.projectGallery {
+  margin: 1em 0;
+  height: fit-content;
+  width: 30vw;
+  max-width: 30vh;
+  grid-column: 4 / 6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vh;
+  justify-self: center;
+}
+
+.activePic {
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  justify-self: center;
+  align-items: center;
+}
+
+.imgButton {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  width: 20%;
+  border: none;
+}
+
+.imgButton:hover {
+  border: none;
+}
+
+.projectPic {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.projectsLinks {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vw;
+}
+
+.seeMore {
+  cursor: pointer;
+  min-width: fit-content;
+  transition: .3s;
+  padding: .5em;
+  border: 5px solid var(--first-color);
+  color: var(--first-color);
+  width: 15vw;
+  min-height: fit-content;
+  height: 5vh;
+  font-size: 1rem;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  font-family: var(--first-font);
+}
+
+.seeMore:hover {
+  min-width: fit-content;
+  transition: .3s;
+  padding: .5em;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  width: 15vw;
+  min-height: fit-content;
+  height: 5vh;
+  font-size: 1rem;
+  font-family: var(--first-font);
+}
+
+.iconImg {
+  transition: .3s;
+  width: 6vw;
+}
+
+.iconImg:hover {
+  transition: .3s;
+  scale: 1.2;
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    padding-top: 2em;
+  }
+
+  .projectHeader {
+    margin-bottom: 1vh;
+  }
+
+  .projectBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectGallery {
+    margin: 2em 0;
+    width: 80vw;
+  }
+
+  .seeMore {
+    font-size: 1em;
+    height: fit-content;
+    width: 20vw;
+  }
+  
+  .seeMore:hover {
+    font-size: 1em;
+    height: fit-content;
+    width: 20vw;
+  }
+
+  .iconImg {
+    width: 15vw;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .projectGallery {
+    margin: 2em 0;
+    width: 60vw;
+  }
+}
