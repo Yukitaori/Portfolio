@@ -103,8 +103,7 @@
   border: 5px solid var(--first-color);
   color: var(--first-color);
   width: 15vw;
-  min-height: fit-content;
-  height: 5vh;
+  height: fit-content;
   font-size: 1rem;
   background-color: var(--second-color);
   border-radius: 10px;
@@ -118,8 +117,7 @@
   background-color: var(--first-color);
   color: var(--second-color);
   width: 15vw;
-  min-height: fit-content;
-  height: 5vh;
+  height: fit-content;
   font-size: 1rem;
   font-family: var(--first-font);
 }

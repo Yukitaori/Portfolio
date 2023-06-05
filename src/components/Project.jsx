@@ -18,11 +18,11 @@ function Project({ project }) {
       </div>
       <div className={styles.projectBody}>
         <div className={styles.projectText}>
-          {project.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {project.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
         </div>
         <div className={styles.projectGallery}>
-          <img className={styles.activePic} src={activePic} alt="Animalz Screenshot" />
-          {project.pictures.map((picture) => <button className={styles.imgButton} type="button" onClick={() => setActivePic(picture)}><img className={styles.projectPic} src={picture} alt={`${project.name} screenshot`} /></button>)}
+          <img className={styles.activePic} src={activePic} alt={`${project.name} screenshot`} />
+          {project.pictures.map((picture, index) => <button key={`${project.name} picture ${index}`} className={styles.imgButton} type="button" onClick={() => setActivePic(picture)}><img className={styles.projectPic} src={picture} alt={`${project.name} screenshot`} /></button>)}
         </div>
       </div>
       <div className={styles.projectsLinks}>
