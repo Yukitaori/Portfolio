@@ -7,6 +7,10 @@
   padding-bottom: 5em;
 }
 
+.project:last-child {
+  margin-bottom: 2rem;
+}
+
 .projectHeader {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,7 @@
   display: grid;
   grid-template-columns: repeat(5, 20%);
   justify-content: center;
+  align-items: center;
 }
 
 .projectText {
