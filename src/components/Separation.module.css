@@ -1,0 +1,78 @@
+.separationLine {
+  display: flex;
+  justify-content: center;
+}
+
+.triskele {
+  width: 3vw;
+  margin: 10vh 1vw;
+}
+
+.triskele:nth-child(5n) {
+  animation: triskele 2s -1.6s infinite linear;
+}
+
+.triskele:nth-child(5n+1) {
+  animation: triskele 2s -1.2s infinite linear;
+}
+
+.triskele:nth-child(5n+2) {
+  animation: triskele 2s -0.8s infinite linear;
+}
+
+.triskele:nth-child(5n+3) {
+  animation: triskele 2s -0.4s infinite linear;
+}
+
+.triskele:nth-child(5n+4) {
+  animation: triskele 2s infinite linear;
+}
+
+@keyframes triskele {
+  0% {
+    transform: rotate(0deg);
+    translate: 0px 0px;
+  }
+  25% {
+    translate: 0px -1em;
+  }
+  50% {
+    transform: rotate( 180deg );
+    translate: 0px 0px;
+  }
+  75% {
+    translate: 0px 1em;
+  }
+  100% {
+    transform: rotate( 360deg );
+    translate: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .triskele {
+    width: 5vw;
+    margin: 5vh 1.5vw;
+  }
+
+  @keyframes triskele {
+    0% {
+      transform: rotate(0deg);
+      translate: 0px 0px;
+    }
+    25% {
+      translate: 0px -0.5em;
+    }
+    50% {
+      transform: rotate( 180deg );
+      translate: 0px 0px;
+    }
+    75% {
+      translate: 0px 0.5em;
+    }
+    100% {
+      transform: rotate( 360deg );
+      translate: 0px 0px;
+    }
+  }
+}
