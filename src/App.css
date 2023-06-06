@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-  font-size: calc(1em + .7vw);
+  font-size: calc(1em + .2vw);
   max-width: 35ch;
   margin-top: 2rem;
   margin-left: 20vw;
@@ -86,3 +86,4 @@ a:link {
 a:visited {
   color: var(--first-color);
 }
+

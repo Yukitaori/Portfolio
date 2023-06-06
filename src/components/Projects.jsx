@@ -1,5 +1,8 @@
 import React from 'react';
 import Project from './Project';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import styles from "./Projects.module.css"
 import htmlicon from '../assets/icons/html-5.png';
 import cssicon from '../assets/icons/css-3.png';
 import jsicon from '../assets/icons/js.png';
@@ -10,10 +13,11 @@ import animalz3 from '../assets/images/Animalz-3.png';
 import tradinimpact1 from '../assets/images/tradinimpact-1.png';
 import tradinimpact2 from '../assets/images/tradinimpact-2.png';
 import tradinimpact3 from '../assets/images/tradinimpact-3.png';
-import wildkedin1 from '../assets/images/wildkedin-1.png'
-import wildkedin2 from '../assets/images/wildkedin-2.png'
-import wildkedin3 from '../assets/images/wildkedin-3.png'
-import mastermind from '../assets/images/mastermind-1.png'
+import wildkedin1 from '../assets/images/wildkedin-1.png';
+import wildkedin2 from '../assets/images/wildkedin-2.png';
+import wildkedin3 from '../assets/images/wildkedin-3.png';
+import mastermind from '../assets/images/mastermind-1.png';
+import triskel from "../assets/icons/triskel.png"
 
 function Projects() {
   const projectsToDisplay = [
@@ -145,10 +149,60 @@ function Projects() {
     },
   ];
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  const CustomRightArrow = ({ onClick }) => {
+    return <button onClick={() => onClick()} className={styles.rightArrow}>⮞</button>;
+  };
+
+  const CustomLeftArrow = ({ onClick} ) => {
+    return <button onClick={() => onClick()} className={styles.leftArrow}>⮜</button>;
+  };
+
+  const CustomDot = ({ onClick, active }) => {
+    if (active) {
+      return (
+        <button
+          className={active ? styles.activeDot : styles.inactiveDot}
+          onClick={() => onClick()}
+        >
+        <img src={triskel} className={styles.activeDotImage} alt="active carousel button" />
+        </button>
+      );
+    } else {
+      return (
+        <button
+          className={active ? styles.activeDot : styles.inactiveDot}
+          onClick={() => onClick()}
+        />
+      );
+    }
+  };
+
   return (
     <div>
       <h1>Projects</h1>
-      {projectsToDisplay.map((project) => <Project key={project.name} project={project} />)}
+      <Carousel responsive={responsive} showDots={true} dotListClass="custom-dot-list-style"  customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />} customDot={<CustomDot />} >
+        {projectsToDisplay.map((project) => <Project key={project.name} project={project} />)}
+      </Carousel>
     </div>
   );
 }

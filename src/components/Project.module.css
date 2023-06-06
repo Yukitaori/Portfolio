@@ -1,14 +1,6 @@
 .project {
   padding-top: 5em;
-}
-
-.project:not(:last-child) {
-  border-bottom: 5px dotted var(--first-color);
-  padding-bottom: 5em;
-}
-
-.project:last-child {
-  margin-bottom: 2rem;
+  padding-bottom: 10vh;
 }
 
 .projectHeader {
@@ -49,6 +41,10 @@
 
 .projectText {
   grid-column: 1 / 4;
+}
+
+.paragraph:nth-child(2n+1) {
+  margin-left: 15vw;
 }
 
 .projectGallery {
