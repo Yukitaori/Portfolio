@@ -81,7 +81,9 @@ function Projects() {
       paragraphs: [
         'Our second group project is a video game that takes place in the Genshin Impact universe.',
         'We had two constraints for this project : working with React and working with APIs.',
-        'We were three persons on this one and we worked for three weeks, building 3 mini-games using different algorithms. That was a lot of fun.',
+        'We were three persons on this one and we worked for three weeks, building 3 mini-games using different algorithms.',
+        'We got to learn how to use states and context in React. These were both concepts that were new to us at the time.',
+        'The whole experience was a lot of fun.',
       ],
       pictures: [tradinimpact1, tradinimpact2, tradinimpact3],
       links: {
@@ -110,7 +112,9 @@ function Projects() {
       paragraphs: [
         'My first group project during the formation.',
         'Four of us have worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.',
+        'We\'ve had the opportunity to build JavaScript objects to use to store each student\'s data.',
         'Versioning with Git and Github was a bit of an intellectual challenge at first because it was new to us, but we survived it.',
+        'This first project was a pretty great occasion to lear a lot about project management and team work.',
       ],
       pictures: [wildkedin1, wildkedin2, wildkedin3],
       links: {
@@ -139,7 +143,9 @@ function Projects() {
       paragraphs: [
         'A board games classic.',
         'I started this project (my very first personal one) before my formation to test JavaScript and DOM manipulation.',
-        'I had quite a hard time with the algorithm in charge of verifying the user\'s guess but I eventually made it.',
+        'I\'ve learnt a lot about interactivity in JavaScript and design in CSS.',
+        'I\'ve had quite a hard time with the algorithm in charge of verifying the user\'s guess but I eventually made it.',
+        'I was worried the project was too ambitious for a first one, but completing it was one of my proudest moments.',
       ],
       pictures: [mastermind],
       links: {

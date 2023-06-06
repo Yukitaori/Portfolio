@@ -1,6 +1,10 @@
 .project {
   padding-top: 5em;
   padding-bottom: 10vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projectHeader {
@@ -70,15 +74,10 @@
 }
 
 .imgButton {
-  width: fit-content;
-  height: fit-content;
   padding: 0;
   width: 20%;
   border: none;
-}
-
-.imgButton:hover {
-  border: none;
+  background-color: var(--second-color);
 }
 
 .projectPic {
@@ -149,6 +148,14 @@
     align-items: center;
   }
   
+  .paragraph:nth-child(2n) {
+    margin-left: 4em;
+  }
+
+  .paragraph:nth-child(2n+1) {
+    margin-left: 1em;
+  }
+
   .projectGallery {
     margin: 2em 0;
     width: 80vw;

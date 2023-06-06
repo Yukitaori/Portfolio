@@ -5,9 +5,9 @@
   top: 0;
   background-color: var(--second-color);
   color: var(--first-color);
-  width: 5vh;
+  width: 10vh;
   height: 5vh;
-  border: solid 1px var(--first-color);
+  border: solid 3px var(--first-color);
   border-radius: 25px;
 }
 
@@ -66,3 +66,16 @@
     transform: rotate( 360deg );
   }
 }
+
+@media screen and (max-width: 800px) {
+  .leftArrow, .rightArrow {
+    width: 10vh;
+    height: fit-content;
+    top: 1vh;
+  }
+
+  .activeDot, .inactiveDot {
+    width: 4vh;
+    height: 4vh;
+  }
+ }
