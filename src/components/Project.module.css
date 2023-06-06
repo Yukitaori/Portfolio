@@ -1,14 +1,10 @@
 .project {
   padding-top: 5em;
-}
-
-.project:not(:last-child) {
-  border-bottom: 5px dotted var(--first-color);
-  padding-bottom: 5em;
-}
-
-.project:last-child {
-  margin-bottom: 2rem;
+  padding-bottom: 10vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projectHeader {
@@ -51,6 +47,10 @@
   grid-column: 1 / 4;
 }
 
+.paragraph:nth-child(2n+1) {
+  margin-left: 15vw;
+}
+
 .projectGallery {
   margin: 1em 0;
   height: fit-content;
@@ -74,15 +74,10 @@
 }
 
 .imgButton {
-  width: fit-content;
-  height: fit-content;
   padding: 0;
   width: 20%;
   border: none;
-}
-
-.imgButton:hover {
-  border: none;
+  background-color: var(--second-color);
 }
 
 .projectPic {
@@ -153,6 +148,14 @@
     align-items: center;
   }
   
+  .paragraph:nth-child(2n) {
+    margin-left: 4em;
+  }
+
+  .paragraph:nth-child(2n+1) {
+    margin-left: 1em;
+  }
+
   .projectGallery {
     margin: 2em 0;
     width: 80vw;

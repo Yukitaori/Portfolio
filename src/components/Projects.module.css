@@ -1,0 +1,81 @@
+.leftArrow, .rightArrow {
+  transition: .3s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  width: 10vh;
+  height: 5vh;
+  border: solid 3px var(--first-color);
+  border-radius: 25px;
+}
+
+.leftArrow {
+  left: 3vh;
+}
+
+.rightArrow {
+  right: 3vh;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+  background-color: var(--first-color);
+  border: solid 1px var(--second-color);
+  color: var(--second-color);
+  transition: .3s;
+}
+
+.activeDot {
+  background-color: var(--second-color);
+  border: solid 1px var(--second-color);
+}
+
+.inactiveDot {
+  background-color: var(--second-color);
+  border: solid 1px var(--first-color);
+}
+
+.activeDot, .inactiveDot {
+  transition: .2s;
+  cursor: pointer;
+  margin: 1vh;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 25px;
+}
+
+.activeDot:hover, .inactiveDot:hover {
+  transition: .2s;
+  scale: 1.2;
+}
+
+.activeDotImage {
+  width: 100%;
+  animation: triskel .5s 1 linear;
+}
+
+@keyframes triskel {
+  0% {
+    transform: rotate( 0deg );
+  }
+  50% {
+    transform: rotate( 180deg );
+  }
+  100% {
+    transform: rotate( 360deg );
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .leftArrow, .rightArrow {
+    width: 10vh;
+    height: fit-content;
+    top: 1vh;
+  }
+
+  .activeDot, .inactiveDot {
+    width: 4vh;
+    height: 4vh;
+  }
+ }

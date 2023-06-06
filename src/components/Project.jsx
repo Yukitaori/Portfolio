@@ -18,7 +18,7 @@ function Project({ project }) {
       </div>
       <div className={styles.projectBody}>
         <div className={styles.projectText}>
-          {project.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+          {project.paragraphs.map((paragraph, index) => <p key={index} className={styles.paragraph} >{paragraph}</p>)}
         </div>
         <div className={styles.projectGallery}>
           <img className={styles.activePic} src={activePic} alt={`${project.name} screenshot`} />
