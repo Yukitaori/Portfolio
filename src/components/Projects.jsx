@@ -113,9 +113,9 @@ function Projects() {
       paragraphs: [
         'My first group project during the formation.',
         'Four of us have worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.',
-        'We\'ve had the opportunity to build JavaScript objects to use to store each student\'s data.',
+        'We\'ve had the opportunity to build JavaScript objects to store each student\'s data.',
         'Versioning with Git and Github was a bit of an intellectual challenge at first because it was new to us, but we survived it.',
-        'This first project was a pretty great occasion to lear a lot about project management and team work.',
+        'This first project was a pretty great occasion to learn a lot about project management and team work.',
       ],
       pictures: [wildkedin1, wildkedin2, wildkedin3],
       links: {
