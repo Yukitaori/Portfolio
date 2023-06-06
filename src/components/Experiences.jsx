@@ -8,7 +8,7 @@ import mysqlicon from "../assets/icons/mysql.png"
 
 function Experience() {
   return (
-    <div>
+    <div id="experience">
       <h1>Experiences</h1>
       <div className={styles.experience}>
         <div className={styles.experienceHeader}>

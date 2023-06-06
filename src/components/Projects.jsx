@@ -204,7 +204,7 @@ function Projects() {
   };
 
   return (
-    <div>
+    <div id="projects">
       <h1>Projects</h1>
       <Carousel responsive={responsive} showDots={true} dotListClass="custom-dot-list-style"  customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />} customDot={<CustomDot />} >
         {projectsToDisplay.map((project) => <Project key={project.name} project={project} />)}
