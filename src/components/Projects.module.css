@@ -1,4 +1,7 @@
 .leftArrow, .rightArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: .3s;
   cursor: pointer;
   position: absolute;
@@ -11,19 +14,26 @@
   border-radius: 25px;
 }
 
+.leftArrow img, .rightArrow img {
+  height: 50%;
+  transition: .3s;
+}
+
+.leftArrow img {
+  transform: rotateY(180deg);
+}
+
+.leftArrow:hover img, .rightArrow:hover img {
+  scale: 2;
+  transition: .3s;
+}
+
 .leftArrow {
   left: 3vh;
 }
 
 .rightArrow {
   right: 3vh;
-}
-
-.rightArrow:hover, .leftArrow:hover {
-  background-color: var(--first-color);
-  border: solid 1px var(--second-color);
-  color: var(--second-color);
-  transition: .3s;
 }
 
 .activeDot {
@@ -70,7 +80,7 @@
 @media screen and (max-width: 800px) {
   .leftArrow, .rightArrow {
     width: 10vh;
-    height: fit-content;
+    height: 3vh;
     top: 1vh;
   }
 
