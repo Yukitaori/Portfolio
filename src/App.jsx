@@ -16,22 +16,17 @@ function App() {
   return (
     <div className={styles.app}>
       <Navbar parts={parts} />
+      <div className='empty'></div>
       <div id="portfolio">
         <Introduction />
         <Separation />
-        <span id="aboutme" />
         <About />
         <Separation />
-        <span id="experience" />
         <Experience />
         <Separation />
-        <span id="projects" />
         <Projects />
         <Separation />
-        <span id="whatsnext" />
         <Next />
-        <Separation />
-        <span id="contact" />
         <Contact />
         <Separation />
         <Social />

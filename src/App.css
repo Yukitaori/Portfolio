@@ -20,6 +20,30 @@ body {
   font-family: var(--first-font);
 }
 
+.empty {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 15vh;
+  width: 100%;
+}
+
+#portfolio {
+  position: relative;
+  z-index: 1;
+  top: 15vh;
+  left: 0;
+  height: 85vh;
+  scrollbar-width: none;
+  overflow: scroll;
+}
+
+
+#portfolio::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   font-size: calc(1em + 3vw);
   margin-top: 1rem;
@@ -31,7 +55,7 @@ h2 {
   font-size: calc(.7em + 2vw);
   margin-top: 1rem;
   margin-left: 15vw;
-  text-decoration:underline ;
+  text-decoration: underline;
 }
 
 h3 {
@@ -56,21 +80,6 @@ a:link {
   color: var(--first-color)
 }
 
-
-@media screen and (max-width: 800px) {
- p {
-  font-size: calc(.7em + 1vw);
-  max-width: 25ch;
-  margin: 2rem auto;
- }
-}
-
-#portfolio {
-  position: relative;
-  z-index: 1;
-  top: 15vh;
-}
-
 .separation {
   border-top: solid .5em var(--first-color);
   width: 50%;
@@ -78,12 +87,15 @@ a:link {
   border-radius: 25px;
 }
 
-#aboutme, #experience, #projects, #whatsnext, #contact {
-  position: inherit;
-  top: -15vh;
-}
-
 a:visited {
   color: var(--first-color);
 }
 
+@media screen and (max-width: 800px) {
+  p {
+   font-size: calc(.7em + 1vw);
+   max-width: 25ch;
+   margin: 2rem auto;
+  }
+ }
+ 

@@ -4,7 +4,7 @@ import photo from "../assets/images/photo.png"
 
 function About() {
   return (
-    <div>
+    <div id="aboutme">
       <h1>About me</h1>
       <div className={styles.aboutBody}>
         <div className={styles.aboutText}>

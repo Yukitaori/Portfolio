@@ -17,7 +17,8 @@ import wildkedin1 from '../assets/images/wildkedin-1.png';
 import wildkedin2 from '../assets/images/wildkedin-2.png';
 import wildkedin3 from '../assets/images/wildkedin-3.png';
 import mastermind from '../assets/images/mastermind-1.png';
-import triskel from "../assets/icons/triskel.png"
+import triskel from "../assets/icons/triskel.png";
+import arrow from "../assets/icons/002-arrow.png";
 
 function Projects() {
   const projectsToDisplay = [
@@ -176,11 +177,11 @@ function Projects() {
   };
 
   const CustomRightArrow = ({ onClick }) => {
-    return <button onClick={() => onClick()} className={styles.rightArrow}>⮞</button>;
+    return <button onClick={() => onClick()} className={styles.rightArrow}><img src={arrow}></img></button>;
   };
 
   const CustomLeftArrow = ({ onClick} ) => {
-    return <button onClick={() => onClick()} className={styles.leftArrow}>⮜</button>;
+    return <button onClick={() => onClick()} className={styles.leftArrow}><img src={arrow}></img></button>;
   };
 
   const CustomDot = ({ onClick, active }) => {
@@ -204,7 +205,7 @@ function Projects() {
   };
 
   return (
-    <div>
+    <div id="projects">
       <h1>Projects</h1>
       <Carousel responsive={responsive} showDots={true} dotListClass="custom-dot-list-style"  customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />} customDot={<CustomDot />} >
         {projectsToDisplay.map((project) => <Project key={project.name} project={project} />)}
