@@ -35,14 +35,15 @@ body {
   top: 15vh;
   left: 0;
   height: 85vh;
-  scrollbar-width: none;
-  overflow: scroll;
+  scrollbar-width: thin;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
-
+/* 
 #portfolio::-webkit-scrollbar {
   display: none;
-}
+} */
 
 h1 {
   font-size: calc(1em + 3vw);
