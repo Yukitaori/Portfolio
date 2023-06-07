@@ -7,7 +7,7 @@ import mail from '../assets/icons/mail.png';
 function Social() {
   return (
     <div>
-      <h1>Social</h1>
+      <h1 className="h1Reversed" onClick={(e) => {e.target.className === "h1Reversed" ? e.target.className = "h1Clicked" : e.target.className = "h1Reversed"}}>Social</h1>
       <div className={styles.socialIcons}>
         <a target="blank" href="https://github.com/Yukitaori">
           <img className={styles.socialIcon} src={github} alt="github icon" />

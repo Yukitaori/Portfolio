@@ -27,6 +27,7 @@ function App() {
         <Projects />
         <Separation />
         <Next />
+        <Separation />
         <Contact />
         <Separation />
         <Social />
