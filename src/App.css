@@ -39,10 +39,20 @@ body {
 }
 
 h1 {
+  transition: 1s;
   font-size: calc(1em + 3vw);
   margin-top: 1rem;
   margin-left: 10vw;
   margin-right: 5vw;
+}
+
+.h1Reversed {
+  transform: rotateX(180deg);
+}
+
+.h1Clicked {
+  transition: 1s;
+  transform: rotateX(180deg) rotate(360deg) rotateX(180deg);
 }
 
 h2 {
