@@ -35,13 +35,7 @@ body {
   top: 15vh;
   left: 0;
   height: 85vh;
-  scrollbar-width: none;
-  overflow: scroll;
-}
-
-
-#portfolio::-webkit-scrollbar {
-  display: none;
+  overflow: auto;
 }
 
 h1 {

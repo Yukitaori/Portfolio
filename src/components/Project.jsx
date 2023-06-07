@@ -4,6 +4,7 @@ import githubIcon from '../assets/icons/github.png';
 
 function Project({ project }) {
   const [activePic, setActivePic] = useState(project.pictures[0]);
+  const [activePicClass, setActivePicClass] = useState(styles.activePic);
 
   return (
     <div className={styles.project}>
@@ -21,7 +22,7 @@ function Project({ project }) {
           {project.paragraphs.map((paragraph, index) => <p key={index} className={styles.paragraph} >{paragraph}</p>)}
         </div>
         <div className={styles.projectGallery}>
-          <img className={styles.activePic} src={activePic} alt={`${project.name} screenshot`} />
+          <img className={activePicClass} src={activePic} alt={`${project.name} screenshot`} onClick={() => {activePicClass === styles.activePic ? setActivePicClass(styles.activePicLarge) : setActivePicClass(styles.activePic)}} />
           {project.pictures.map((picture, index) => <button key={`${project.name} picture ${index}`} className={styles.imgButton} type="button" onClick={() => setActivePic(picture)}><img className={styles.projectPic} src={picture} alt={`${project.name} screenshot`} /></button>)}
         </div>
       </div>

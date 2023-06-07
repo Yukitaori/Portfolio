@@ -52,7 +52,7 @@
   margin: 1vh;
   width: 5vh;
   height: 5vh;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 .activeDot:hover, .inactiveDot:hover {
