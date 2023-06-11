@@ -7,6 +7,7 @@ import htmlicon from '../assets/icons/html-5.png';
 import cssicon from '../assets/icons/css-3.png';
 import jsicon from '../assets/icons/js.png';
 import reacticon from '../assets/icons/react.png';
+import nodeicon from "../assets/icons/nodejs.png"
 import animalz1 from '../assets/images/Animalz-1.png';
 import animalz2 from '../assets/images/Animalz-2.png';
 import animalz3 from '../assets/images/Animalz-3.png';
@@ -42,6 +43,10 @@ function Projects() {
         {
           src: reacticon,
           alt: 'React icon',
+        },
+        {
+          src: nodeicon,
+          alt: 'Node.js icon',
         },
       ],
       paragraphs: [

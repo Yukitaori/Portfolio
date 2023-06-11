@@ -5,6 +5,7 @@ import cssicon from "../assets/icons/css-3.png"
 import jsicon from "../assets/icons/js.png"
 import reacticon from "../assets/icons/react.png"
 import mysqlicon from "../assets/icons/mysql.png"
+import nodeicon from "../assets/icons/nodejs.png"
 
 function Experience() {
   return (
@@ -22,6 +23,7 @@ function Experience() {
             <img className={styles.iconImg} src={jsicon} alt="JavaScript icon" />
             <img className={styles.iconImg} src={reacticon} alt="React icon" />
             <img className={styles.iconImg} src={mysqlicon} alt="MySQL icon" />
+            <img className={styles.iconImg} src={nodeicon} alt="Node.js icon" />
           </div>
         </div>
         <p>Wild Code School has taught me the basics of HTML and CSS, but also JavaScript and React.</p>
