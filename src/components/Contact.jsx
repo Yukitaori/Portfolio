@@ -10,7 +10,7 @@ function Contact() {
   const [formSubmit, setFormSubmit] = useState();
   const [informationMessage, setInformationMessage] = useState(null);
   const initEmailjs = () => {
-    emailjs.init('HC1feOxw7qAdaT9cQ');
+    emailjs.init(import.meta.env.VITE_EMAILJS);
   };
 
   useEffect(() => {
