@@ -8,6 +8,16 @@ import cssicon from '../assets/icons/css-3.png';
 import jsicon from '../assets/icons/js.png';
 import reacticon from '../assets/icons/react.png';
 import nodeicon from "../assets/icons/nodejs.png"
+import sqlicon from "../assets/icons/sql.png"
+import feteduclip1 from '../assets/images/feteduclip-1.png';
+import feteduclip2 from '../assets/images/feteduclip-2.png';
+import feteduclip3 from '../assets/images/feteduclip-3.png';
+import cultural1 from '../assets/images/cultural-1.png';
+import cultural2 from '../assets/images/cultural-2.png';
+import cultural3 from '../assets/images/cultural-3.png';
+import babyplace1 from '../assets/images/babyplace-1.png';
+import babyplace2 from '../assets/images/babyplace-2.png';
+import babyplace3 from '../assets/images/babyplace-3.png';
 import animalz1 from '../assets/images/Animalz-1.png';
 import animalz2 from '../assets/images/Animalz-2.png';
 import animalz3 from '../assets/images/Animalz-3.png';
@@ -23,6 +33,127 @@ import arrow from "../assets/icons/002-arrow.png";
 
 function Projects() {
   const projectsToDisplay = [
+    {
+      id: 7,
+      name: 'La Fête du Clip',
+      period: 'August 2023',
+      stacksIcons: [
+        {
+          src: htmlicon,
+          alt: 'HTML icon',
+        },
+        {
+          src: cssicon,
+          alt: 'CSS icon',
+        },
+        {
+          src: jsicon,
+          alt: 'JavaScript icon',
+        },
+        {
+          src: reacticon,
+          alt: 'React icon',
+        },
+      ],
+      paragraphs: [
+        'During my internship, I had the opportunity to build a website.',
+        'La Fête du Clip is a music video festival in Lyon, and the association needed a fresh site to talk about their actions, the event itself and its program.',
+        'We\'ve worked together to design the website (design surely is not an easy thing) and then figured out the content of the website day after day.',
+        'I put my hands on the Instagram Basic Display API for this project, which was pretty fun to use. In the end, the website is really reactive and I think it\'s really nice to browse.',
+        'I\'m glad I had the chance to work on this project because I like this festival, and I\'m more and more invested in it.',
+      ],
+      pictures: [feteduclip1, feteduclip2, feteduclip3],
+      links: {
+        github: null,
+        deployed: "https://feteduclip.com/",
+      },
+    },
+    {
+      id: 6,
+      name: 'Cultural Log App',
+      period: 'July 2023',
+      stacksIcons: [
+        {
+          src: htmlicon,
+          alt: 'HTML icon',
+        },
+        {
+          src: cssicon,
+          alt: 'CSS icon',
+        },
+        {
+          src: jsicon,
+          alt: 'JavaScript icon',
+        },
+        {
+          src: reacticon,
+          alt: 'React icon',
+        },
+        {
+          src: nodeicon,
+          alt: 'Node.js icon',
+        },
+        {
+          src: sqlicon,
+          alt: 'SQL icon',
+        },
+      ],
+      paragraphs: [
+        'This project is a personal one that I had to work on for the end of our training course, to test my skills and make sure I was able to design and develop an app from end to end.',
+        'I decided to work on an app designed to track all the cultural products I consume or the ones I want to, and add some informations like a personal rating, if I own the product, if I\'ve lent it, to whom, etc.',
+        'The goal was to develop the app in two days (we could begin a few days ahead for the design).',
+        'I put everything I got in this app, at the time, and I\'m pretty proud of the result.',
+        'The experience was awesome (like a personal hackathon), and I can\'t wait to work on this app again to improve it.',
+      ],
+      pictures: [cultural1, cultural2, cultural3],
+      links: {
+        github: 'https://github.com/Yukitaori/Cultural_Log-App',
+        deployed: null,
+      },
+    },
+    {
+      id: 5,
+      name: 'Babyplace',
+      period: 'May 2023 - July 2023',
+      stacksIcons: [
+        {
+          src: htmlicon,
+          alt: 'HTML icon',
+        },
+        {
+          src: cssicon,
+          alt: 'CSS icon',
+        },
+        {
+          src: jsicon,
+          alt: 'JavaScript icon',
+        },
+        {
+          src: reacticon,
+          alt: 'React icon',
+        },
+        {
+          src: nodeicon,
+          alt: 'Node.js icon',
+        },
+        {
+          src: sqlicon,
+          alt: 'SQL icon',
+        },
+      ],
+      paragraphs: [
+        'Our third group project, during the training course.',
+        'The point of the project was to develop a dynamic app for parents who want to make a reservation for the care of their child, and for the professionals of child care to manage the places and reservations in their structure.',
+        'We\'ve had two months to build this app, and put into practice EVERYTHING that we\'ve learnt during the training course.',
+        'I had the opportunity to work on an authentication feature, a register form, and the user course for making a reservation.',
+        'It was a lot of work and a great experience in teamwork.',
+      ],
+      pictures: [babyplace1, babyplace2, babyplace3],
+      links: {
+        github: 'https://github.com/WildCodeSchool/2023-02-JS-FT-Lyon-P3-Babyplace',
+        deployed: null,
+      },
+    },
     {
       id: 4,
       name: 'Animalz',
@@ -50,7 +181,7 @@ function Projects() {
         },
       ],
       paragraphs: [
-        'The first hackathon of our lives, during the formation.',
+        'The first hackathon of our lives, during the training course.',
         'We have built a team of four to make a project on the "holidays" theme. This app is meant for people who do not want to travel alone : it\'s a way for them to meet other people to travel together.',
         'We\'ve worked hard during the 30 hours of the hackathon, and had to use tools and NPM modules that we had not used before.',
         'I had the opportunity to build my first database with JSON-server, make API fetches, and create a filters system.',
@@ -116,7 +247,7 @@ function Projects() {
         },
       ],
       paragraphs: [
-        'My first group project during the formation.',
+        'My first group project during the training course.',
         'Four of us have worked for two weeks on this project, that takes the form of a portfolio presenting the students from my class, with a filters system.',
         'We\'ve had the opportunity to build JavaScript objects to store each student\'s data.',
         'Versioning with Git and Github was a bit of an intellectual challenge at first because it was new to us, but we survived it.',
@@ -148,7 +279,7 @@ function Projects() {
       ],
       paragraphs: [
         'A board games classic.',
-        'I started this project (my very first personal one) before my formation to test JavaScript and DOM manipulation.',
+        'I started this project (my very first personal one) before my training course to test JavaScript and DOM manipulation.',
         'I\'ve learnt a lot about interactivity in JavaScript and design in CSS.',
         'I\'ve had quite a hard time with the algorithm in charge of verifying the user\'s guess but I eventually made it.',
         'I was worried the project was too ambitious for a first one, but completing it was one of my proudest moments.',
