@@ -27,9 +27,10 @@ function Project({ project }) {
         </div>
       </div>
       <div className={styles.projectsLinks}>
+      {project.links.github ? (
         <a className={styles.githubLink} target="blank" href={project.links.github}>
           <img className={styles.iconImg} src={githubIcon} alt="Github Icon" />
-        </a>
+        </a>) : null }
         {project.links.deployed ? (
           <a className={styles.projectLink} target="blank" href={project.links.deployed}>
             <button className={styles.seeMore} type="button">See more</button>
