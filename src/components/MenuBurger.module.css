@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .menuBurger {
@@ -22,7 +22,7 @@
 .menuBurger div {
   width: 7vw;
   min-width: 3em;
-  height: .5em;
+  height: 0.5em;
   border-radius: 5px;
   background-color: var(--first-color);
   margin-top: 3vh;

@@ -15,7 +15,12 @@
 
 .title {
   margin: 0;
-  background: linear-gradient(90deg, var(--second-color) 45%, var(--first-color) 55%, var(--second-color) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--second-color) 45%,
+    var(--first-color) 55%,
+    var(--second-color) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

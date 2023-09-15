@@ -6,13 +6,13 @@
 }
 
 .socialIcon {
-  transition: .3s;
+  transition: 0.3s;
   width: 10vw;
   max-width: 7vh;
 }
 
 .socialIcon:hover {
-  transition: .3s;
+  transition: 0.3s;
   scale: 1.2;
   max-width: 7vh;
 }
