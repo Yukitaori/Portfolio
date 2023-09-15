@@ -1,4 +1,5 @@
 .menuBurgerDiv {
+  cursor: pointer;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
 }
 
 .menuBurger {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;

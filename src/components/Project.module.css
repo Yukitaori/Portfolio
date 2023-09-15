@@ -4,14 +4,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .projectHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .projectTitle {
@@ -29,10 +29,8 @@
 }
 
 .stackImg {
-  width: 6vw;
-  /* max-width: 4vh; */
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  width: 4vw;
+  margin: 0.25em;
   height: auto;
 }
 
@@ -149,11 +147,15 @@
 
 @media screen and (max-width: 800px) {
   .project {
-    padding-top: 2em;
+    padding-top: 3em;
   }
 
   .projectHeader {
     margin-bottom: 1vh;
+  }
+
+  .stackImg {
+    width: 7vw;
   }
 
   .projectBody {

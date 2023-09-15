@@ -32,6 +32,14 @@ import triskel from "../assets/icons/triskel.png";
 import arrow from "../assets/icons/002-arrow.png";
 
 function Projects() {
+  const scrollToTop = () => {
+    setTimeout(() => {
+      document
+        .getElementById("projects")
+        .scrollIntoView({ behavior: "smooth" });
+    }, 500);
+  };
+
   const projectsToDisplay = [
     {
       id: 7,
@@ -337,7 +345,10 @@ function Projects() {
       return (
         <button
           className={active ? styles.activeDot : styles.inactiveDot}
-          onClick={() => onClick()}
+          onClick={() => {
+            onClick();
+            scrollToTop();
+          }}
         >
           <img
             src={triskel}
@@ -350,7 +361,10 @@ function Projects() {
       return (
         <button
           className={active ? styles.activeDot : styles.inactiveDot}
-          onClick={() => onClick()}
+          onClick={() => {
+            onClick();
+            scrollToTop();
+          }}
         />
       );
     }
@@ -360,6 +374,7 @@ function Projects() {
     <div id="projects">
       <h1>Projects</h1>
       <Carousel
+        className={styles.carousel}
         responsive={responsive}
         showDots={true}
         dotListClass="custom-dot-list-style"

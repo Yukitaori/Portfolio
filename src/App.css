@@ -18,6 +18,7 @@ body {
   color: var(--first-color);
   background-color: var(--second-color);
   font-family: var(--first-font);
+  user-select: none;
 }
 
 .empty {
@@ -40,7 +41,7 @@ body {
 
 h1 {
   transition: 1s;
-  font-size: calc(1em + 3vw);
+  font-size: calc(1.5em + 2vw);
   margin-top: 1rem;
   margin-left: 10vw;
   margin-right: 5vw;
@@ -102,3 +103,4 @@ a:visited {
     margin: 2rem auto;
   }
 }
+
