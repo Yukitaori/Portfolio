@@ -15,45 +15,44 @@
 }
 
 @keyframes pic {
-0% {
-  transform: rotate( 0deg );
-  translate: 0px 0px;
-}
-10% {
-  translate: 2px 0px;
-}
-20% {
-  translate: 2px 2px;
-
-}
-30% {
-  transform: rotate( 3deg );
-  translate: 4px 1px;
-}
-40% {
-  translate: 4px 3px;
-}
-50% {
-  transform: rotate( 0deg );
-  translate: 3px 0px;
-}
-60% {
-  translate: 2px 4px;
-}
-70% {
-  transform: rotate( -3deg );
-  translate: 3px 3px;
-}
-80% {
-  translate: 1px 4px;
-}
-90% {
-  translate: 2px 2px;
-}
-100% {
-  transform: rotate( 0deg );
-  translate: 0px 0px;
-}
+  0% {
+    transform: rotate(0deg);
+    translate: 0px 0px;
+  }
+  10% {
+    translate: 2px 0px;
+  }
+  20% {
+    translate: 2px 2px;
+  }
+  30% {
+    transform: rotate(3deg);
+    translate: 4px 1px;
+  }
+  40% {
+    translate: 4px 3px;
+  }
+  50% {
+    transform: rotate(0deg);
+    translate: 3px 0px;
+  }
+  60% {
+    translate: 2px 4px;
+  }
+  70% {
+    transform: rotate(-3deg);
+    translate: 3px 3px;
+  }
+  80% {
+    translate: 1px 4px;
+  }
+  90% {
+    translate: 2px 2px;
+  }
+  100% {
+    transform: rotate(0deg);
+    translate: 0px 0px;
+  }
 }
 
 @media screen and (max-width: 800px) {

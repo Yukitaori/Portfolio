@@ -1,8 +1,17 @@
-.leftArrow, .rightArrow {
+.carousel {
+  margin-top: 1em;
+}
+
+.carousel ul:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+
+.leftArrow,
+.rightArrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -14,18 +23,20 @@
   border-radius: 25px;
 }
 
-.leftArrow img, .rightArrow img {
+.leftArrow img,
+.rightArrow img {
   height: 50%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .leftArrow img {
   transform: rotateY(180deg);
 }
 
-.leftArrow:hover img, .rightArrow:hover img {
+.leftArrow:hover img,
+.rightArrow:hover img {
   scale: 2;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .leftArrow {
@@ -46,46 +57,52 @@
   border: solid 1px var(--first-color);
 }
 
-.activeDot, .inactiveDot {
-  transition: .2s;
+.activeDot,
+.inactiveDot {
+  transition: 0.2s;
   cursor: pointer;
   margin: 1vh;
-  width: 5vh;
-  height: 5vh;
+  width: 5vw;
+  height: 5vw;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50px;
 }
 
-.activeDot:hover, .inactiveDot:hover {
-  transition: .2s;
+.activeDot:hover,
+.inactiveDot:hover {
+  transition: 0.2s;
   scale: 1.2;
 }
 
 .activeDotImage {
   width: 100%;
-  animation: triskel .5s 1 linear;
+  animation: triskel 0.5s 1 linear;
 }
 
 @keyframes triskel {
   0% {
-    transform: rotate( 0deg );
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate( 180deg );
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate( 360deg );
+    transform: rotate(360deg);
   }
 }
 
 @media screen and (max-width: 800px) {
-  .leftArrow, .rightArrow {
+  .leftArrow,
+  .rightArrow {
     width: 10vh;
     height: 3vh;
     top: 1vh;
   }
 
-  .activeDot, .inactiveDot {
+  .activeDot,
+  .inactiveDot {
     width: 4vh;
     height: 4vh;
   }
- }
+}

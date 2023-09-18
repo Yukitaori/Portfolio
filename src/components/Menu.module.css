@@ -15,11 +15,11 @@
   border-bottom-right-radius: 100%;
   justify-content: space-between;
   align-items: center;
-  animation: menu .2s 1 linear;
+  animation: menu 0.2s 1 linear;
 }
 
 .hiddenMenuBar {
-  display : none;
+  display: none;
 }
 
 @keyframes menu {
@@ -61,7 +61,7 @@
   }
 
   .navLinks {
-    margin-inline: 1em;;
+    margin-inline: 1em;
     font-size: 5vh;
   }
 }
