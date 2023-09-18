@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "./Project";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -32,6 +32,7 @@ import triskel from "../assets/icons/triskel.png";
 import arrow from "../assets/icons/002-arrow.png";
 
 function Projects() {
+  const [openModal, setOpenModal] = useState(false);
   const scrollToTop = () => {
     setTimeout(() => {
       document
@@ -326,7 +327,13 @@ function Projects() {
 
   const CustomRightArrow = ({ onClick }) => {
     return (
-      <button onClick={() => onClick()} className={styles.rightArrow}>
+      <button
+        onClick={() => {
+          onClick();
+          setOpenModal(false);
+        }}
+        className={styles.rightArrow}
+      >
         <img src={arrow}></img>
       </button>
     );
@@ -334,7 +341,13 @@ function Projects() {
 
   const CustomLeftArrow = ({ onClick }) => {
     return (
-      <button onClick={() => onClick()} className={styles.leftArrow}>
+      <button
+        onClick={() => {
+          onClick();
+          setOpenModal(false);
+        }}
+        className={styles.leftArrow}
+      >
         <img src={arrow}></img>
       </button>
     );
@@ -363,6 +376,7 @@ function Projects() {
           className={active ? styles.activeDot : styles.inactiveDot}
           onClick={() => {
             onClick();
+            setOpenModal(false);
             scrollToTop();
           }}
         />
@@ -374,6 +388,11 @@ function Projects() {
     <div id="projects">
       <h1>Projects</h1>
       <Carousel
+        beforeChange={function (previousSlide, _ref) {
+          const currentSlide = _ref.currentSlide;
+          _ref.onMove;
+          setOpenModal(false);
+        }}
         className={styles.carousel}
         responsive={responsive}
         showDots={true}
@@ -383,7 +402,12 @@ function Projects() {
         customDot={<CustomDot />}
       >
         {projectsToDisplay.map((project) => (
-          <Project key={project.name} project={project} />
+          <Project
+            key={project.name}
+            project={project}
+            openModal={openModal}
+            setOpenModal={setOpenModal}
+          />
         ))}
       </Carousel>
     </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Project.module.css";
 import githubIcon from "../assets/icons/github.png";
 
-function Project({ project }) {
+function Project({ project, openModal, setOpenModal }) {
   const [activePic, setActivePic] = useState(project.pictures[0]);
   const [activePicClass, setActivePicClass] = useState(styles.activePic);
 
@@ -33,16 +33,34 @@ function Project({ project }) {
           ))}
         </div>
         <div className={styles.projectGallery}>
-          <img
-            className={activePicClass}
-            src={activePic}
-            alt={`${project.name} screenshot`}
+          {openModal ? (
+            <div className={styles.blur}>
+              <button
+                className={styles.picButton}
+                type="button"
+                onClick={() => setOpenModal(false)}
+              >
+                <img
+                  className={styles.modalPic}
+                  src={activePic}
+                  alt={`${project.name} screenshot`}
+                />
+              </button>
+            </div>
+          ) : null}
+          <button
+            type="button"
+            className={styles.picButton}
             onClick={() => {
-              activePicClass === styles.activePic
-                ? setActivePicClass(styles.activePicLarge)
-                : setActivePicClass(styles.activePic);
+              setOpenModal(true);
             }}
-          />
+          >
+            <img
+              className={styles.activePic}
+              src={activePic}
+              alt={`${project.name} screenshot`}
+            />
+          </button>
           <div className={styles.galleryButtons}>
             {project.pictures.map((picture, index) => (
               <button
