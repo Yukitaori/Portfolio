@@ -9,25 +9,25 @@ import jsicon from "../assets/icons/js.png";
 import reacticon from "../assets/icons/react.png";
 import nodeicon from "../assets/icons/nodejs.png";
 import sqlicon from "../assets/icons/sql.png";
-import feteduclip1 from "../assets/images/feteduclip-1.png";
-import feteduclip2 from "../assets/images/feteduclip-2.png";
-import feteduclip3 from "../assets/images/feteduclip-3.png";
-import cultural1 from "../assets/images/cultural-1.png";
-import cultural2 from "../assets/images/cultural-2.png";
-import cultural3 from "../assets/images/cultural-3.png";
-import babyplace1 from "../assets/images/babyplace-1.png";
-import babyplace2 from "../assets/images/babyplace-2.png";
-import babyplace3 from "../assets/images/babyplace-3.png";
-import animalz1 from "../assets/images/Animalz-1.png";
-import animalz2 from "../assets/images/Animalz-2.png";
-import animalz3 from "../assets/images/Animalz-3.png";
-import tradinimpact1 from "../assets/images/tradinimpact-1.png";
-import tradinimpact2 from "../assets/images/tradinimpact-2.png";
-import tradinimpact3 from "../assets/images/tradinimpact-3.png";
-import wildkedin1 from "../assets/images/wildkedin-1.png";
-import wildkedin2 from "../assets/images/wildkedin-2.png";
-import wildkedin3 from "../assets/images/wildkedin-3.png";
-import mastermind from "../assets/images/mastermind-1.png";
+import feteduclip1 from "../assets/images/feteduclip-1.jpg";
+import feteduclip2 from "../assets/images/feteduclip-2.jpg";
+import feteduclip3 from "../assets/images/feteduclip-3.jpg";
+import cultural1 from "../assets/images/cultural-1.jpg";
+import cultural2 from "../assets/images/cultural-2.jpg";
+import cultural3 from "../assets/images/cultural-3.jpg";
+import babyplace1 from "../assets/images/babyplace-1.jpg";
+import babyplace2 from "../assets/images/babyplace-2.jpg";
+import babyplace3 from "../assets/images/babyplace-3.jpg";
+import animalz1 from "../assets/images/Animalz-1.jpg";
+import animalz2 from "../assets/images/Animalz-2.jpg";
+import animalz3 from "../assets/images/Animalz-3.jpg";
+import tradinimpact1 from "../assets/images/tradinimpact-1.jpg";
+import tradinimpact2 from "../assets/images/tradinimpact-2.jpg";
+import tradinimpact3 from "../assets/images/tradinimpact-3.jpg";
+import wildkedin1 from "../assets/images/wildkedin-1.jpg";
+import wildkedin2 from "../assets/images/wildkedin-2.jpg";
+import wildkedin3 from "../assets/images/wildkedin-3.jpg";
+import mastermind from "../assets/images/mastermind-1.jpg";
 import triskel from "../assets/icons/triskel.png";
 import arrow from "../assets/icons/002-arrow.png";
 
@@ -37,7 +37,7 @@ function Projects() {
       document
         .getElementById("projects")
         .scrollIntoView({ behavior: "smooth" });
-    }, 500);
+    }, 400);
   };
 
   const projectsToDisplay = [
