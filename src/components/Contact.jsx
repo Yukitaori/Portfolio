@@ -35,7 +35,13 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormSubmit({ name: name, mail: mail, message: message });
+    if (name === "" || mail === "" || message === "") {
+      setInformationMessage(
+        "Please complete all fields before trying to submit."
+      );
+    } else {
+      setFormSubmit({ name: name, mail: mail, message: message });
+    }
   };
 
   useEffect(() => {
@@ -57,8 +63,6 @@ function Contact() {
       );
     } else if (error) {
       setInformationMessage(error.message);
-    } else if (!formSubmit) {
-      setInformationMessage("Please write something before trying to submit.");
     }
   }, [formSubmit]);
 
@@ -103,7 +107,6 @@ function Contact() {
         <button
           type="submit"
           className={styles.submitButton}
-          disabled={name === "" || mail === "" || message === ""}
           onClick={(e) => handleSubmit(e)}
         >
           {" "}
