@@ -18,6 +18,12 @@ textarea {
   background-color: var(--first-color);
   color: var(--second-color);
   padding: 0.2em;
+  font-size: calc(1em + 0.4vh);
+}
+
+::placeholder {
+  color: var(--second-color);
+  font-family: var(--first-font);
 }
 
 .submitButton {
