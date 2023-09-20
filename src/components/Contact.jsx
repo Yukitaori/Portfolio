@@ -57,6 +57,8 @@ function Contact() {
       );
     } else if (error) {
       setInformationMessage(error.message);
+    } else if (!formSubmit) {
+      setInformationMessage("Please write something before trying to submit.");
     }
   }, [formSubmit]);
 
@@ -66,6 +68,7 @@ function Contact() {
       <form>
         <label htmlFor="name">Name</label>
         <input
+          className={styles.inputs}
           type="text"
           id="name"
           placeholder="Enter your name"
@@ -74,6 +77,7 @@ function Contact() {
         />
         <label htmlFor="email">Email</label>
         <input
+          className={styles.inputs}
           type="text"
           id="email"
           placeholder="Enter your email"
@@ -82,6 +86,7 @@ function Contact() {
         />
         <label htmlFor="message">Message</label>
         <textarea
+          className={styles.inputs}
           type="text"
           id="message"
           placeholder="Enter your message here"
@@ -91,7 +96,9 @@ function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         />
         {informationMessage ? (
-          <p className={styles.errorMessage}>{informationMessage}</p>
+          <p role="alert" className={styles.errorMessage}>
+            {informationMessage}
+          </p>
         ) : null}
         <button
           type="submit"

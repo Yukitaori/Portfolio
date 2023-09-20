@@ -6,7 +6,13 @@ function Separation() {
 
   for (let i = 1; i <= 10; i++) {
     separationLine.push(
-      <img key={i} src={triskele} className={styles.triskele} />
+      <img
+        key={i}
+        src={triskele}
+        className={styles.triskele}
+        alt="Triskel spinning"
+        aria-hidden="true"
+      />
     );
   }
 

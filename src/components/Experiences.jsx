@@ -17,7 +17,10 @@ function Experience() {
             <h2>Wild Code School</h2>
             <h3>Feb 2023 - Jul 2023</h3>
           </div>
-          <div className={styles.experienceStacks}>
+          <div
+            aria-label="Experience stacks"
+            className={styles.experienceStacks}
+          >
             <img className={styles.iconImg} src={htmlicon} alt="HTML icon" />
             <img className={styles.iconImg} src={cssicon} alt="CSS icon" />
             <img
@@ -36,7 +39,7 @@ function Experience() {
         </p>
         <p>
           Group projets were fun to work on (meanwhile pretty challenging), and
-          I had a great time during the hackathon.
+          I had a great time during the hackathons.
         </p>
       </div>
     </div>

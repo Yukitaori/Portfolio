@@ -67,9 +67,9 @@ function Projects() {
       paragraphs: [
         "During my internship, I had the opportunity to build a website.",
         "La Fête du Clip is a music video festival in Lyon, and the association needed a fresh site to talk about their actions, the event itself and its program.",
-        "We've worked together to design the website (design surely is not an easy thing) and then figured out the content of the website day after day.",
-        "I put my hands on the Instagram Basic Display API for this project, which was pretty fun to use. In the end, the website is really reactive and I think it's really nice to browse.",
-        "I'm glad I had the chance to work on this project because I like this festival, and I'm more and more invested in it.",
+        "I've worked with the members of the association to design the website (design surely is not an easy thing) and then figured out the precise content of the website day after day.",
+        "I put my hands on the Instagram Basic Display API for this project, which was pretty simple to use. I also discovered and used CSS framework Tailwind. In the end, the website is really reactive and I think it's really nice to browse.",
+        "I'm glad I had the chance to work on this project because I like this festival, and I'm becoming more and more invested in it.",
       ],
       pictures: [feteduclip1, feteduclip2, feteduclip3],
       links: {
@@ -328,6 +328,7 @@ function Projects() {
   const CustomRightArrow = ({ onClick }) => {
     return (
       <button
+        aria-label="Next project button"
         onClick={() => {
           onClick();
           setOpenModal(false);
@@ -342,6 +343,7 @@ function Projects() {
   const CustomLeftArrow = ({ onClick }) => {
     return (
       <button
+        aria-label="Previous project button"
         onClick={() => {
           onClick();
           setOpenModal(false);
@@ -357,6 +359,7 @@ function Projects() {
     if (active) {
       return (
         <button
+          aria-label="Active project button"
           className={active ? styles.activeDot : styles.inactiveDot}
           onClick={() => {
             onClick();
@@ -373,6 +376,7 @@ function Projects() {
     } else {
       return (
         <button
+          aria-label="Inactive project button"
           className={active ? styles.activeDot : styles.inactiveDot}
           onClick={() => {
             onClick();
@@ -392,6 +396,7 @@ function Projects() {
           const currentSlide = _ref.currentSlide;
           _ref.onMove;
           setOpenModal(false);
+          scrollToTop();
         }}
         className={styles.carousel}
         responsive={responsive}
