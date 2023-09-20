@@ -36,7 +36,7 @@ function Experience() {
         </p>
         <p>
           Group projets were fun to work on (meanwhile pretty challenging), and
-          I had a great time during the hackathon.
+          I had a great time during the hackathons.
         </p>
       </div>
     </div>

@@ -5,10 +5,13 @@ function Next() {
     <div id="whatsnext">
       <h1>What's Next</h1>
       <p>
-        For the end of my training course, I'm looking for a stage of six to
-        eight weeks.
+        Now that my training course is complete and my internship is done, I'm
+        currently working on some new projects and testing new techs.
       </p>
-      <p>After that, I guess I'll just see where life takes me.</p>
+      <p>
+        I'm also looking for a job, so if you're interested, you can contact me
+        (Check out the dedicated section of this portfolio) !
+      </p>
     </div>
   );
 }
