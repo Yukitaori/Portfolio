@@ -24,7 +24,7 @@ function About() {
         <img
           src={photo}
           className={styles.profilePic}
-          alt="portrait of François"
+          alt="Portrait of François"
         />
       </div>
     </div>

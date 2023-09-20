@@ -13,7 +13,7 @@ function Project({ project, openModal, setOpenModal }) {
           <h2>{project.name}</h2>
           <h3>{project.period}</h3>
         </div>
-        <div className={styles.projectStacks}>
+        <div aria-label="Project stacks" className={styles.projectStacks}>
           {project.stacksIcons.map((icon) => (
             <img
               key={icon.alt}
