@@ -96,7 +96,9 @@ function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         />
         {informationMessage ? (
-          <p className={styles.errorMessage}>{informationMessage}</p>
+          <p role="alert" className={styles.errorMessage}>
+            {informationMessage}
+          </p>
         ) : null}
         <button
           type="submit"
