@@ -16,7 +16,9 @@ export default function MenuBurger({ showMenu, setShowMenu }) {
   return (
     <div className={styles.menuBurgerDiv}>
       {checkbox}
-      <label
+      <button
+        type="button"
+        aria-label="Button for menu"
         htmlFor={styles.toggle}
         id="menuBurger"
         className={styles.menuBurger}
@@ -25,7 +27,7 @@ export default function MenuBurger({ showMenu, setShowMenu }) {
         <div className={styles.topBun}></div>
         <div className={styles.meat}></div>
         <div className={styles.bottomBun}></div>
-      </label>
+      </button>
     </div>
   );
 }

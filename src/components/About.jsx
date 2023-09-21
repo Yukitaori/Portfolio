@@ -15,9 +15,8 @@ function About() {
             social administration.
           </p>
           <p>
-            I'm studying development languages since february 2023 to july 2023,
-            and I'm today proud to be a junior developer with some projects to
-            show.
+            I've been studying development languages since february 2023, and
+            I'm today proud to be a junior developer with some projects to show.
           </p>
           <p>Hope you enjoy.</p>
         </div>
