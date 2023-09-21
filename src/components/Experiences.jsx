@@ -9,7 +9,7 @@ import nodeicon from "../assets/icons/nodejs.png";
 
 function Experience() {
   return (
-    <div id="experience">
+    <section id="experience">
       <h1>Experiences</h1>
       <div className={styles.experience}>
         <div className={styles.experienceHeader}>
@@ -42,7 +42,7 @@ function Experience() {
           I had a great time during the hackathons.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

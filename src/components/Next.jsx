@@ -2,7 +2,7 @@ import React from "react";
 
 function Next() {
   return (
-    <div id="whatsnext">
+    <section id="whatsnext">
       <h1>What's Next</h1>
       <p>
         Now that my training course is complete and my internship is done, I'm
@@ -12,7 +12,7 @@ function Next() {
         I'm also looking for a job, so if you're interested, you can contact me
         (Check out the dedicated section of this portfolio) !
       </p>
-    </div>
+    </section>
   );
 }
 

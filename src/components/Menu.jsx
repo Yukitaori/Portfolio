@@ -23,9 +23,9 @@ function Menu({ parts, showMenu, setShowMenu }) {
   };
 
   return (
-    <div className={showMenu ? styles.menuBar : styles.hiddenMenuBar}>
+    <nav className={showMenu ? styles.menuBar : styles.hiddenMenuBar}>
       <ul className={styles.menuList}>{mapMenu(parts)}</ul>
-    </div>
+    </nav>
   );
 }
 

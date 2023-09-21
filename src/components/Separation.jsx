@@ -17,7 +17,7 @@ function Separation() {
   }
 
   return (
-    <div className={styles.separationLine}>
+    <div className={styles.separationLine} aria-hidden="true">
       {separationLine.map((logo) => logo)}
     </div>
   );

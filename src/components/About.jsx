@@ -4,7 +4,7 @@ import photo from "../assets/images/photo.png";
 
 function About() {
   return (
-    <div id="aboutme">
+    <section id="aboutme">
       <h1>About me</h1>
       <div className={styles.aboutBody}>
         <div className={styles.aboutText}>
@@ -27,7 +27,7 @@ function About() {
           alt="Portrait of François"
         />
       </div>
-    </div>
+    </section>
   );
 }
 

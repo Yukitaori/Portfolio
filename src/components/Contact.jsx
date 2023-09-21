@@ -67,7 +67,7 @@ function Contact() {
   }, [formSubmit]);
 
   return (
-    <div id="contact">
+    <section id="contact">
       <h1>Contact</h1>
       <form>
         <label htmlFor="name">Name</label>
@@ -113,7 +113,7 @@ function Contact() {
           Submit
         </button>
       </form>
-    </div>
+    </section>
   );
 }
 
