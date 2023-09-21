@@ -389,7 +389,7 @@ function Projects() {
   };
 
   return (
-    <div id="projects">
+    <section id="projects">
       <h1>Projects</h1>
       <Carousel
         beforeChange={function (previousSlide, _ref) {
@@ -415,7 +415,7 @@ function Projects() {
           />
         ))}
       </Carousel>
-    </div>
+    </section>
   );
 }
 

@@ -6,7 +6,7 @@ import mail from "../assets/icons/mail.png";
 
 function Social() {
   return (
-    <div>
+    <section>
       <h1
         className="h1Reversed"
         onClick={(e) => {
@@ -32,7 +32,7 @@ function Social() {
           <img className={styles.socialIcon} src={mail} alt="mail icon" />
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
