@@ -26,8 +26,26 @@
   height: auto;
 }
 
+.experienceBody {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video {
+  margin-right: 2vw;
+  width: 500px;
+  height: 30vh;
+  max-width: 90%;
+}
+
 @media screen and (max-width: 800px) {
   .iconImg {
     width: 7vw;
+  }
+
+  .experienceBody {
+    flex-direction: column;
   }
 }
