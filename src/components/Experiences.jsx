@@ -33,14 +33,28 @@ function Experience() {
             <img className={styles.iconImg} src={nodeicon} alt="Node.js icon" />
           </div>
         </div>
-        <p>
-          Wild Code School has taught me the basics of HTML and CSS, but also
-          JavaScript and React.
-        </p>
-        <p>
-          Group projets were fun to work on (meanwhile pretty challenging), and
-          I had a great time during the hackathons.
-        </p>
+        <div className={styles.experienceBody}>
+          <div>
+            {" "}
+            <p>
+              Wild Code School has taught me the basics of HTML and CSS, but
+              also JavaScript and React.
+            </p>
+            <p>
+              Group projets were fun to work on (meanwhile pretty challenging),
+              and I had a great time during the hackathons.
+            </p>
+          </div>
+
+          <iframe
+            className={styles.video}
+            src="https://www.youtube.com/embed/l1yA_xsbqLs?si=dAKXlaAg4IZwnDxe"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          />
+        </div>
       </div>
     </section>
   );

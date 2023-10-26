@@ -20,11 +20,19 @@ function About() {
           </p>
           <p>Hope you enjoy.</p>
         </div>
-        <img
-          src={photo}
-          className={styles.profilePic}
-          alt="Portrait of François"
-        />
+        <div className={styles.picBlock}>
+          {" "}
+          <img
+            src={photo}
+            className={styles.profilePic}
+            alt="Portrait of François"
+          />
+          <img
+            src="https://www.codewars.com/users/Yukitaori/badges/large"
+            className={styles.badge}
+            alt="CodeWars Badge"
+          />
+        </div>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ function Next() {
       </p>
       <p>
         I'm also looking for a job, so if you're interested, you can contact me
-        (Check out the dedicated section of this portfolio) !
+        (check out the dedicated section of this portfolio) !
       </p>
     </section>
   );
