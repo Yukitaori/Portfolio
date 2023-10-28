@@ -38,7 +38,7 @@ function Experience() {
             {" "}
             <p>
               Wild Code School has taught me the basics of HTML and CSS, but
-              also JavaScript and React.
+              also JavaScript, React and SQL.
             </p>
             <p>
               Group projets were fun to work on (meanwhile pretty challenging),

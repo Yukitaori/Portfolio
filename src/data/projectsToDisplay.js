@@ -95,10 +95,10 @@ const projectsToDisplay = [
     ],
     paragraphs: [
       "During the second hackathon of our training course, Emmaüs Connect gave us a challenge.",
-      "Emmaüs Connect sell second-hand phones to increase digital inclusivity, and we had to days to provide a solution for their volunteers to help them set an accurate and fair price for the phones that people would donate to them, just by entering the hardware specifities in an app.",
+      "Emmaüs Connect sell second-hand phones to increase digital inclusivity, and we had two days to provide a solution for their volunteers to help them set an accurate and fair price for the phones that people would donate to them, just by entering the hardware specifities in an app.",
       "We've built a database for technical specs and the index number associated to each of them, and I've created an algorithm that could use the indexes to set a price. I also had the charge to implement the possibility to upload .csv files for the administrators to modify the database without need of technical skills.",
-      "For the .csv files uplaod, I used a package named fast-csv. This took me a lot of time, because the documentation wasn't easy to understand, but it was a great explosion of joy when I finally managed to make it work.",
-      "We've really gotten out of our comfort zone for this hackathon, that we've eventuallly won.",
+      "For the .csv files upload, I used a package named fast-csv. This took me a lot of time, because the documentation wasn't easy to understand, but it was a great explosion of joy when I finally managed to make it work.",
+      "We've really gotten out of our comfort zone for this hackathon, that we've eventually won.",
     ],
     pictures: [emmaus1, emmaus2, emmaus3],
     links: {
