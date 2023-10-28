@@ -23,10 +23,13 @@ import wildkedin1 from "../assets/images/wildkedin-1.jpg";
 import wildkedin2 from "../assets/images/wildkedin-2.jpg";
 import wildkedin3 from "../assets/images/wildkedin-3.jpg";
 import mastermind from "../assets/images/mastermind-1.jpg";
+import emmaus1 from "../assets/images/emmaus-1.jpg";
+import emmaus2 from "../assets/images/emmaus-2.jpg";
+import emmaus3 from "../assets/images/emmaus-3.jpg";
 
 const projectsToDisplay = [
   {
-    id: 7,
+    id: 8,
     name: "La Fête du Clip",
     period: "Aug 2023 - Oct 2023",
     stacksIcons: [
@@ -58,6 +61,49 @@ const projectsToDisplay = [
     links: {
       github: null,
       deployed: "https://feteduclip.com/",
+    },
+  },
+  {
+    id: 7,
+    name: "Emmaüs Connect",
+    period: "Jul 2023",
+    stacksIcons: [
+      {
+        src: htmlicon,
+        alt: "HTML icon",
+      },
+      {
+        src: cssicon,
+        alt: "CSS icon",
+      },
+      {
+        src: jsicon,
+        alt: "JavaScript icon",
+      },
+      {
+        src: reacticon,
+        alt: "React icon",
+      },
+      {
+        src: nodeicon,
+        alt: "Node.js icon",
+      },
+      {
+        src: sqlicon,
+        alt: "SQL icon",
+      },
+    ],
+    paragraphs: [
+      "During the second hackathon of our training course, Emmaüs Connect gave us a challenge.",
+      "Emmaüs Connect sell second-hand phones to increase digital inclusivity, and we had to days to provide a solution for their volunteers to help them set an accurate and fair price for the phones that people would donate to them, just by entering the hardware specifities in an app.",
+      "We've built a database for technical specs and the index number associated to each of them, and I've created an algorithm that could use the indexes to set a price. I also had the charge to implement the possibility to upload .csv files for the administrators to modify the database without need of technical skills.",
+      "For the .csv files uplaod, I used a package named fast-csv. This took me a lot of time, because the documentation wasn't easy to understand, but it was a great explosion of joy when I finally managed to make it work.",
+      "We've really gotten out of our comfort zone for this hackathon, that we've eventuallly won.",
+    ],
+    pictures: [emmaus1, emmaus2, emmaus3],
+    links: {
+      github: "https://github.com/LightQv/hackathon_emmaus_connect",
+      deployed: null,
     },
   },
   {
