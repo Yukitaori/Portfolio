@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import photo from "../assets/images/photo.png";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -27,11 +28,13 @@ function About() {
             className={styles.profilePic}
             alt="Portrait of François"
           />
-          <img
-            src="https://www.codewars.com/users/Yukitaori/badges/large"
-            className={styles.badge}
-            alt="CodeWars Badge"
-          />
+          <Link to="https://www.codewars.com/users/Yukitaori" target="_blank">
+            <img
+              src="https://www.codewars.com/users/Yukitaori/badges/large"
+              alt="CodeWars Badge"
+              className={styles.badge}
+            />
+          </Link>
         </div>
       </div>
     </section>
