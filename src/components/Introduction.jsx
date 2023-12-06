@@ -5,7 +5,7 @@ function Introduction() {
   return (
     <section id="introduction">
       <h1 className={styles.salutations}>
-        <i>Fáilte</i>, I'm François
+        <i>Fáilte</i>, is mise François
       </h1>
       <div>
         <p>I write code, and it turns into stuff since 2023.</p>
